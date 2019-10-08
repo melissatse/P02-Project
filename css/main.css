@@ -5,6 +5,11 @@
 body {
   /* font-family: sans-serif; */
   padding: 2rem;
+  margin:3rem;
+  box-sizing: border-box;
+
+
+
 }
 
 .element {
@@ -16,7 +21,6 @@ body {
 
 
 h3 {
-  font-style: italic;
   margin-top: 1rem;
 }
 
@@ -32,13 +36,6 @@ nav a:hover, nav a:focus {
   text-decoration: none;
 }
 
-code {
-  background-color: #EEE;
-  padding: 0.5rem;
-  display: block;
-}
-
-
 /*
   INTERACTIVE ELEMENTS -------------------
 */
@@ -46,33 +43,36 @@ code {
 /* Styling for basic buttons */
 .button-nav , .submit-style, .reset-style , .button-addtocart {
   display: inline-block;
-  padding: 0.7rem;
-  color: black;
-  background-color: #cacc90;
+  padding: 0.5em;
+  color: #f0eee3;
+  background-color: #b4876e;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 300;
   font-size: 0.8em;
+  border-radius: 0.5rem;
 
 }
 
 .submit-style , .reset-style {
-  padding: 0.7rem;
+  padding: 0.5em;
   font-size: 0.8em;
   border: none;
 }
 
-.button-nav:hover, .button-nav:focus , .button-addtocart:hover, .button-addtocart:focus {
-  background-color: #ffb777;
-}
+.button-nav:hover, .button-nav:focus , .button-addtocart:hover, .button-addtocart:focus, .submit-style:hover, .submit-style:focus, .reset-style:hover, .reset-style:focus {
+  background-color: #f0eee3;
+  color:#b4876e;
+
 
 
 
 #citations ul a {
   font-size: 10pt;
 }
+
 
 
 /*
