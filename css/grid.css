@@ -1,0 +1,13 @@
+
+
+@media (min-width: 50em) {
+  .grid {
+    display: flex;
+  }
+
+.column1 , .column2 {
+  flex:1;
+margin-right: 50px;
+}
+
+}

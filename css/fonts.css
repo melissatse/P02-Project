@@ -1,0 +1,20 @@
+
+@font-face {
+  src: url(fonts/recoleta-black-webfont.woff);
+  font-family: recoleta-black;
+}
+
+@font-face {
+  src: url(fonts/recoleta-medium-webfont.woff);
+  font-family: recoleta-medium;
+}
+
+.recoleta{
+  font-family: recoleta-black;
+  font-size: 2.2em;
+}
+
+.raleway-font{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8em;
+}

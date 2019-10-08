@@ -1,0 +1,397 @@
+/* BACKGROUND COLOR */
+* {
+  background: #f4f1e2;
+}
+
+code {
+  background-color: #eee9d0;
+}
+
+
+
+/* BRANDING SECTION + GENERAL OVERALL STYLING  */
+
+.preloved {
+  font-family: recoleta-black;
+  font-size: 2.5em;
+  color: #7b7c50;
+}
+
+.branding-info {
+  max-width: 500px;
+}
+
+p , li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9em;
+}
+
+
+h2 , h3 , h4 , h5 {
+  font-family: recoleta-medium;
+  color: #28261a;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9em;
+}
+
+/* COLOR PALETTE */
+.color1 {
+  background-color:#111111;
+  font-size: 1.2em;
+  text-align: center;
+  color:white;
+  padding: 1.2em;
+  max-width: 500px;
+}
+
+.color2 {
+  background-color:#9a997e;
+  font-size: 1.2em;
+  text-align: center;
+  color:white;
+  padding: 1.2em;
+  max-width: 500px;
+}
+
+.color3 {
+  background-color:#cacc90;
+  font-size: 1.2em;
+  text-align: center;
+  color:white;
+  padding: 1.2em;
+  max-width: 500px;
+}
+
+.color4 {
+  background-color:#ffb777;
+  font-size: 1.2em;
+  text-align: center;
+  color:white;
+  padding: 1.2em;
+  max-width: 500px;
+}
+
+.color5 {
+  background-color:#f4ebbe;
+  font-size: 1.2em;
+  text-align: center;
+  color:white;
+  padding: 1.2em;
+  max-width: 500px;
+}
+
+/* MOODBOARD */
+.artdirection {
+  max-width: 100%;
+}
+
+/* SECTION TITLES */
+
+.id-title {
+  color: #716529;
+}
+
+/* TEXT STYLING FOR: submit and reset, labels, and intext links */
+.submit-style , .reset-style , label , .intext-link{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+/* IN TEXT LINK STYLING */
+.intext-link , .cite {
+  text-decoration: none;
+  color: #716529;
+}
+
+.intext-link:hover , .cite:hover {
+  color: #53551a;
+}
+
+/* PHOTO AS A LINK STYLING */
+
+.photo-link:hover {
+  opacity: 0.5;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+}
+.wrapper {
+  width:100%;
+}
+
+/* NAVIGATION STYLING */
+
+@media (min-width: 20em) {
+.button-nav-main {
+  /* display: inline-flex; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #9a997e;
+  color: white;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  /* flex-direction: row; */
+  margin-top: 0.5em;
+}
+
+.button-nav-main:hover, .button-nav-main:focus {
+  background-color: #f4f1e2;
+  color: black;
+}
+
+}
+
+@media (min-width: 50em) {
+
+
+.button-nav-main {
+  display: inline-flex;
+  flex: 1;
+}
+
+.button-nav-main:hover, .button-nav-main:focus {
+  background-color: #f4f1e2;
+  color: black;
+}
+
+}
+
+/* PRODUCT LISTING STYLING */
+
+@media (min-width: 20em) {
+.p-item {
+  max-width: 100%;
+}
+
+.product-list {
+  display: block;
+  margin-bottom: 6em;
+}
+
+.product-description {
+  margin-top: 0.5em;
+  margin-left: 0;
+}
+
+.button-addtocart {
+  margin-top: 1em;
+  text-align: center;
+  max-width: 300px;;
+}
+
+.preloved-product {
+  margin-top: 5px;
+  font-size: 1.5em;
+  max-width: 300px;
+  color: #60452c;
+}
+
+.product-subtitle {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 14pt;
+  color: #333414;
+}
+
+.object-description {
+  margin-top: 0px;
+  margin-bottom:0px;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 20px;
+  line-height: 1.5;
+
+}
+
+.Price {
+  font-weight: 500;
+}
+
+}
+
+/* PRODUCT LISTING STYLING FOR BIGGER SCREENS */
+
+
+@media (min-width: 50em) {
+.p-item {
+  max-width: 100%;
+}
+
+.product-list {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+
+.product-description {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+.button-addtocart {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.preloved-product {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  max-width: 300px;
+  color: #60452c;
+}
+
+.product-subtitle {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 14pt;
+  color: #333414;
+}
+
+.object-description {
+  margin-top: 0px;
+  margin-bottom:0px;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 1.6rem;
+  line-height: 1.5;
+
+}
+
+.Price {
+  font-weight: 500;
+}
+
+}
+
+
+/* CHECKOUT CART STYLING */
+
+.checkout-items {
+  display:flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 50px;
+  border: 2px solid black;
+}
+
+
+.row1 {
+  display: flex;
+}
+
+.info {
+margin-top: 0;
+}
+
+.row1 img{
+  margin-top: 2pt;
+  width:100px;
+}
+
+.row1 .info .Price {
+  margin-top: 2pt;
+}
+
+.row2 {
+  display:flex;
+}
+
+.row2 p {
+  margin-bottom:0;
+  font-size: .9em;
+  margin-left: auto;
+  line-height: 1.5;
+}
+
+.row2 .column1 {
+  margin-right: 50px;
+}
+
+.row3 .column1 p {
+  margin: 0;
+  margin-bottom: 1.5pt;
+  font-size: .9em;
+}
+
+.row4 p {
+  font-size: .9em;
+}
+
+.row5 {
+  font-size: .9em;
+  margin-top: 50px;
+}
+
+
+/* PAYMENT FORM STYLING */
+
+.payment-form {
+  max-width: 500px;
+  padding: 50px;
+  border: 2px solid black;
+}
+
+.fill {
+  display:block;
+  padding-top: 5%;
+}
+
+.product-description {
+  display:flex;
+  flex-direction: column;
+}
+
+
+
+.bill-info-1 {
+  display:flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+
+.bill-info-1 .input-style , .bill-info-3 .input-style {
+color: black;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.bill-info-2 , .bill-info-4 {
+  display:inline-block;
+  max-width: 500px;
+  padding-bottom:20px;
+}
+
+
+input[type=submit]:focus , input[type=reset]:focus , input[type=text]:focus  {
+outline: none;
+}
+
+input[type=text] {
+  padding:1em;
+  border: 1px solid black;
+}
+
+
+.bill-info-3 {
+  display:flex;
+  flex-direction: column;
+  max-width: 200px;
+}
