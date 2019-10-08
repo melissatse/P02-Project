@@ -56,15 +56,16 @@ nav a:hover, nav a:focus {
 
 }
 
-/* .submit-style , .reset-style {
+.submit-style , .reset-style {
   padding: 0.5em;
   font-size: 0.8em;
   border: none;
-} */
+}
 
 .button-nav:hover, .button-nav:focus , .button-addtocart:hover, .button-addtocart:focus, .submit-style:hover, .submit-style:focus, .reset-style:hover, .reset-style:focus {
   background-color: #f0eee3;
   color:#b4876e;
+
 
 
 
