@@ -25,7 +25,7 @@ code {
 
 /* BRANDING SECTION + GENERAL OVERALL STYLING  */
 
-.preloved {
+.jocole {
   font-family: 'DM Serif Display', serif;
   font-size: 3.5em;
   color: black;
@@ -188,9 +188,14 @@ nav {
 
 /* PRODUCT LISTING STYLING */
 
-@media (min-width: 20em) {
-.p-item {
+@media (min-width: 15em) {
+/* .p-item {
   max-width: 100%;
+} */
+
+.p-item {
+  width: 100%;
+  max-width: 400px;
 }
 
 .product-list {
@@ -204,7 +209,6 @@ nav {
 }
 
 .button-addtocart {
-  margin-top: 1em;
   text-align: center;
   max-width: 300px;;
 }
@@ -230,13 +234,6 @@ nav {
   line-height: 1.5;
 }
 
-ul {
-  padding-left: 0;
-  margin-left: 20px;
-  line-height: 1.5;
-
-}
-
 .Price {
   font-weight: 500;
 }
@@ -247,10 +244,21 @@ ul {
 
 
 @media (min-width: 50em) {
-.p-item {
-  max-width: 100%;
-}
 
+  /* NEW PRODUCT STYLING */
+  .product-list-grid {
+    display: flex;
+  }
+/* .p-item {
+  max-width: 30%;
+} */
+
+.row {
+  /* border: 1px solid black; */
+  /* background-color: #e9e5d0; */
+  /* margin: 1%; */
+  padding: 10%;
+}
 .product-list {
   display: flex;
   margin-bottom: 100px;
@@ -263,7 +271,6 @@ ul {
 }
 
 .button-addtocart {
-  margin-top: 4em;
   text-align: center;
 }
 
@@ -303,6 +310,8 @@ ul {
 
 
 /* CHECKOUT CART STYLING */
+
+
 
 .checkout-items {
   display:flex;
