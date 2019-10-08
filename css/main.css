@@ -5,6 +5,7 @@
 body {
   /* font-family: sans-serif; */
   padding: 2rem;
+
 }
 
 .element {
@@ -32,13 +33,6 @@ nav a:hover, nav a:focus {
   text-decoration: none;
 }
 
-code {
-  background-color: #EEE;
-  padding: 0.5rem;
-  display: block;
-}
-
-
 /*
   INTERACTIVE ELEMENTS -------------------
 */
@@ -48,13 +42,14 @@ code {
   display: inline-block;
   padding: 0.7rem;
   color: black;
-  background-color: #cacc90;
+  background-color: #f0eee2;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
-  font-family: 'Raleway', sans-serif;
+  font-family: "PlayfairDisplay", serif;
   font-weight: 500;
   font-size: 0.8em;
+  border-radius: 0.5rem;
 
 }
 
@@ -64,8 +59,8 @@ code {
   border: none;
 }
 
-.button-nav:hover, .button-nav:focus , .button-addtocart:hover, .button-addtocart:focus {
-  background-color: #ffb777;
+.button-nav:hover, .button-nav:focus , .button-addtocart:hover, .button-addtocart:focus, .submit-style:hover, .submit-style:focus, .reset-style:hover, .reset-style:focus {
+  background-color: #b4876e;
 }
 
 

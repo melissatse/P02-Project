@@ -1,20 +1,40 @@
-
+/*
 @font-face {
   src: url(fonts/recoleta-black-webfont.woff);
   font-family: recoleta-black;
+} */
+
+
+
+@font-face {
+font-family: "PlayfairDisplay";
+font-weight: normal;
+font-style: normal;
+src: url("../css/fonts/PlayfairDisplay-Regular.ttf");
 }
 
 @font-face {
-  src: url(fonts/recoleta-medium-webfont.woff);
-  font-family: recoleta-medium;
+font-family: "PlayfairDisplay";
+font-weight: bold;
+font-style: bold;
+src: url("../css/fonts/PlayfairDisplay-Bold.ttf");
 }
 
+@font-face {
+font-family: "PlayfairDisplay";
+font-weight: italic;
+font-style: normal;
+src: url("../css/fonts/PlayfairDisplay-Italic.ttf");
+}
+
+/*
 .recoleta{
   font-family: recoleta-black;
   font-size: 2.2em;
-}
+} */
 
-.raleway-font{
-  font-family: 'Raleway', sans-serif;
+.lato-font{
+  font-family: 'Lato', sans-serif;
   font-size: 1.8em;
+  color:red;
 }
