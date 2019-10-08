@@ -6,6 +6,8 @@ body {
   /* font-family: sans-serif; */
   padding: 2rem;
   margin:3rem;
+  box-sizing: border-box;
+
 
 
 }
@@ -41,34 +43,35 @@ nav a:hover, nav a:focus {
 /* Styling for basic buttons */
 .button-nav , .submit-style, .reset-style , .button-addtocart {
   display: inline-block;
-  padding: 0.7rem;
-  color: black;
-  background-color: #f0eee2;
+  padding: 0.5em;
+  color: #f0eee3;
+  background-color: #b4876e;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
-  font-family: "PlayfairDisplay", serif;
-  font-weight: 500;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 300;
   font-size: 0.8em;
   border-radius: 0.5rem;
 
 }
 
-.submit-style , .reset-style {
-  padding: 0.7rem;
+/* .submit-style , .reset-style {
+  padding: 0.5em;
   font-size: 0.8em;
   border: none;
-}
+} */
 
 .button-nav:hover, .button-nav:focus , .button-addtocart:hover, .button-addtocart:focus, .submit-style:hover, .submit-style:focus, .reset-style:hover, .reset-style:focus {
-  background-color: #b4876e;
-}
+  background-color: #f0eee3;
+  color:#b4876e;
 
 
 
 #citations ul a {
   font-size: 10pt;
 }
+
 
 
 /*

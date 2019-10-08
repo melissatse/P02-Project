@@ -35,6 +35,25 @@ code {
   max-width: 500px;
 }
 
+
+
+.user-image{
+  max-width: 25%;
+  height:auto;
+  decoration:non;
+  display: inline-block;
+}
+
+/* CAPTIONS UNDER IMAGES */
+figcaption {
+  font-family:"Lato", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-bottom:2rem;
+
+}
+
 p , li {
   font-family: 'Lato', sans-serif;
   font-size: 0.7em;
@@ -105,6 +124,14 @@ a {
   max-width: 100%;
 }
 
+.italic{
+  font-style: italic;
+}
+
+#text-Input{
+  text-decoration: none;
+ }
+
 /* SECTION TITLES */
 
 .id-title {
@@ -115,18 +142,18 @@ a {
 
 /* TEXT STYLING FOR: submit and reset, labels, and intext links */
 .submit-style , .reset-style , label , .intext-link{
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 300;
 }
 
 /* IN TEXT LINK STYLING */
 .intext-link , .cite {
   text-decoration: none;
-  color: #716529;
+color: #b4876e;
 }
 
 .intext-link:hover , .cite:hover {
-  color: #53551a;
+  color: black;
 }
 
 /* PHOTO AS A LINK STYLING */
@@ -148,15 +175,16 @@ nav {
 @media (min-width: 20em) {
 .button-nav-main {
   /* display: inline-flex; */
-  font-family: "PlayfairDisplay", serif;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 300;
   font-size: 0.7rem;
   display: flex;
   flex-wrap: wrap;
   padding: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: #f0eee2;
-  color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #b4876e;
+  color: #f0eee3;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -165,7 +193,7 @@ nav {
 }
 
 .button-nav-main:hover, .button-nav-main:focus {
-  background-color: #b4876e;
+  background-color: #f0eee3;
   color: black;
 }
 
@@ -180,8 +208,8 @@ nav {
 }
 
 .button-nav-main:hover, .button-nav-main:focus {
-  background-color: #b4876e;
-  color: white;
+  background-color: #f0eee3;
+  color: #b4876e;
 }
 
 }
@@ -403,6 +431,9 @@ margin-bottom: 10px;
 
 input[type=submit]:focus , input[type=reset]:focus , input[type=text]:focus  {
 outline: none;
+color:#b4876e;
+decoration:none;
+
 }
 
 input[type=text] {
