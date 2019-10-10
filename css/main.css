@@ -437,7 +437,8 @@ margin-top: 0;
 .payment-form {
   max-width: 500px;
   padding: 50px;
-  border: 2px solid black;
+  border: 0.05em solid #b4876e;
+  border-radius: 1em;
 }
 
 .fill {
@@ -453,11 +454,18 @@ margin-top: 0;
 
 
 .bill-info-1 {
+
   display:flex;
   flex-direction: column;
   max-width: 500px;
+
 }
 
+.bill-style{
+  font-family:"Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+}
 
 .bill-info-1 .input-style , .bill-info-3 .input-style {
 color: black;
@@ -495,13 +503,13 @@ input[type=text] {
 /* Styling for basic buttons */
 .button-nav , .submit-style, .reset-style , .button-addtocart {
   display: inline-block;
-  padding: 0.5em;
+  padding: 0.6em;
   color: #f0eee3;
   background-color: #b4876e;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 0.8em;
   border-radius: 0.5rem;
@@ -515,7 +523,7 @@ input[type=text] {
   font-style: italic;
   font-size: 0.7rem;
   display: inline-block;
-  padding: 0.5rem;
+  padding: 1em;
   margin-top: 0.5rem;
   color: #f0eee3;
   background-color: #f0eee2;
@@ -524,12 +532,6 @@ input[type=text] {
   transition-duration: 0.5s;
   border-radius: 0.5rem;
 
-}
-
-.submit-style , .reset-style {
-  padding: 0.5em;
-  font-size: 0.8em;
-  border: none;
 }
 
 .button-nav:hover, .button-nav:focus , .button-addtocart:hover, .button-addtocart:focus, .submit-style:hover, .submit-style:focus, .reset-style:hover, .reset-style:focus {
@@ -607,7 +609,6 @@ a:hover {
 
 
 h6 {
-  font-family:"PlayfairDisplay", serif;
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -636,6 +637,10 @@ input[type=text] {
 
 
 label {
+  font-family:"Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  color:red;
   margin-bottom: 10px;
   display: block;
 }
