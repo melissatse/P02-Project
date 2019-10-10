@@ -35,10 +35,462 @@ p {
 nav a:hover, nav a:focus {
   text-decoration: none;
 }
-
 /*
-  INTERACTIVE ELEMENTS -------------------
+  STYLE GUIDE STYLING FOR JACOLE
+
+
+  COLOURS:
+
+  BLACK: #000000;
+  DARK BLUE: #2b2c42;
+  PALE BLUE: #8d99ae;
+  TAN: #b4876e;
+  BEIGE: #f0eee2;
 */
+/* BACKGROUND COLOR */
+* {
+  background: white;
+}
+
+code {
+  background-color: #e5e5e5;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+
+/* BRANDING SECTION + GENERAL OVERALL STYLING  */
+
+.preloved {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3.5em;
+  color: black;
+}
+
+.branding-info {
+  max-width: 500px;
+}
+
+
+
+.user-image{
+  max-width: 25%;
+  height:auto;
+  decoration:none;
+  display: inline-block;
+}
+
+.product-image{
+  max-width: 40%;
+  height: auto;
+  decoration:none;
+  display: inline-block;
+
+}
+
+/* CAPTIONS UNDER IMAGES */
+figcaption {
+  font-family:"Lato", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-bottom:2rem;
+
+}
+
+p , li {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7em;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+
+
+h2 , h3 , h4 , h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #28261a;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+}
+
+/* COLOR PALETTE */
+.color1 {
+  background-color:#000000;
+  font-size: 1.2em;
+  text-align: center;
+  color:white;
+  padding: 1.2em;
+  max-width: 500px;
+}
+
+.color2 {
+  background-color: #2b2c42;
+  font-size: 1.2em;
+  text-align: center;
+  color:white;
+  padding: 1.2em;
+  max-width: 500px;
+}
+
+.color3 {
+  background-color:#8d99ae;
+  font-size: 1.2em;
+  text-align: center;
+  color:white;
+  padding: 1.2em;
+  max-width: 500px;
+}
+
+.color4 {
+  background-color:#b4876e;
+  font-size: 1.2em;
+  text-align: center;
+  color:white;
+  padding: 1.2em;
+  max-width: 500px;
+}
+
+.color5 {
+  background-color:#f0eee2;
+  font-size: 1.2em;
+  text-align: center;
+  color: black;
+  padding: 1.2em;
+  max-width: 500px;
+}
+
+/* MOODBOARD */
+.artdirection {
+  max-width: 100%;
+}
+
+.italic{
+  font-style: italic;
+}
+
+#text-Input{
+  text-decoration: none;
+ }
+
+/* SECTION TITLES */
+
+.id-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #716529;
+}
+
+/* TEXT STYLING FOR: submit and reset, labels, and intext links */
+.submit-style , .reset-style , label , .intext-link{
+  font-family: 'DM Serif Display', serif;
+  font-weight: 300;
+}
+
+/* IN TEXT LINK STYLING */
+.intext-link , .cite {
+  text-decoration: none;
+color: #b4876e;
+}
+
+.intext-link:hover , .cite:hover {
+  color: black;
+}
+
+/* PHOTO AS A LINK STYLING */
+
+.photo-link:hover {
+  opacity: 0.5;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+}
+.wrapper {
+  width:100%;
+}
+
+/* NAVIGATION STYLING */
+
+@media (min-width: 20em) {
+.button-nav-main {
+  /* display: inline-flex; */
+  font-family: 'DM Serif Display', serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #b4876e;
+  color: #f0eee3;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  /* flex-direction: row; */
+  margin-top: 0.5em;
+}
+
+.button-nav-main:hover, .button-nav-main:focus {
+  background-color: #f0eee3;
+  color: #b4876e;
+}
+
+}
+
+@media (min-width: 50em) {
+
+
+.button-nav-main {
+  display: inline-flex;
+  flex: 1;
+}
+/*
+.button-nav-main:hover, .button-nav-main:focus {
+  background-color: #f0eee3;
+  color: #b4876e;
+} */
+
+/* } */
+
+/* PRODUCT LISTING STYLING */
+
+@media (min-width: 20em) {
+.p-item {
+  max-width: 100%;
+}
+
+.product-list {
+  display: block;
+  margin-bottom: 6em;
+}
+
+.product-description {
+  margin-top: 0.5em;
+  margin-left: 0;
+}
+
+.button-addtocart {
+  margin-top: 1em;
+  text-align: center;
+  max-width: 300px;;
+}
+
+.preloved-product {
+  margin-top: 5px;
+  font-size: 1.5em;
+  max-width: 300px;
+  color: #60452c;
+}
+
+
+.object-description {
+  margin-top: 0px;
+  margin-bottom:0px;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 20px;
+  line-height: 1.5;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #f0eee2;
+
+}
+
+.Price {
+  font-weight: 500;
+}
+
+}
+
+/* PRODUCT LISTING STYLING FOR BIGGER SCREENS */
+
+
+@media (min-width: 50em) {
+.p-item {
+  max-width: 100%;
+}
+
+.product-list {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+
+.product-description {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+.button-addtocart {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.preloved-product {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  max-width: 300px;
+  color: #60452c;
+}
+
+.product-subtitle {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 14pt;
+  color: #333414;
+}
+
+
+.object-description {
+  margin-top: 0px;
+  margin-bottom:0px;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 1.6rem;
+  line-height: 1.5;
+
+}
+
+.Price {
+  font-weight: 500;
+}
+
+}
+
+
+/* CHECKOUT CART STYLING */
+
+.checkout-items {
+  display:flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 50px;
+  border: 2px solid black;
+}
+
+
+.row1 {
+  display: flex;
+}
+
+.info {
+margin-top: 0;
+}
+
+.row1 img{
+  margin-top: 2pt;
+  width:100px;
+}
+
+.row1 .info .Price {
+  margin-top: 2pt;
+}
+
+.row2 {
+  display:flex;
+}
+
+.row2 p {
+  margin-bottom:0;
+  font-size: .9em;
+  margin-left: auto;
+  line-height: 1.5;
+}
+
+.row2 .column1 {
+  margin-right: 50px;
+}
+
+.row3 .column1 p {
+  margin: 0;
+  margin-bottom: 1.5pt;
+  font-size: .9em;
+}
+
+.row4 p {
+  font-size: .9em;
+}
+
+.row5 {
+  font-size: .9em;
+  margin-top: 50px;
+}
+
+
+/* PAYMENT FORM STYLING */
+
+.payment-form {
+  max-width: 500px;
+  padding: 50px;
+  border: 2px solid black;
+}
+
+.fill {
+  display:block;
+  padding-top: 5%;
+}
+
+.product-description {
+  display:flex;
+  flex-direction: column;
+}
+
+
+
+.bill-info-1 {
+  display:flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+
+.bill-info-1 .input-style , .bill-info-3 .input-style {
+color: black;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+
+.bill-info-2 , .bill-info-4 {
+  display:inline-block;
+  max-width: 500px;
+  padding-bottom:20px;
+}
+
+
+input[type=submit]:focus , input[type=reset]:focus , input[type=text]:focus  {
+outline: none;
+color:#b4876e;
+decoration:none;
+
+}
+
+input[type=text] {
+  padding:1em;
+  border: 1px solid black;
+}
+
+
+.bill-info-3 {
+  display:flex;
+  flex-direction: column;
+  max-width: 200px;
+}
 
 /* Styling for basic buttons */
 .button-nav , .submit-style, .reset-style , .button-addtocart {
@@ -52,6 +504,24 @@ nav a:hover, nav a:focus {
   font-family: 'DM Serif Display', serif;
   font-weight: 300;
   font-size: 0.8em;
+  border-radius: 0.5rem;
+
+}
+
+
+.button-out{
+  font-family: Lato;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.7rem;
+  display: inline-block;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  color: #f0eee3;
+  background-color: #f0eee2;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
   border-radius: 0.5rem;
 
 }
@@ -76,12 +546,118 @@ nav a:hover, nav a:focus {
 
 
 /*
-  TEXT ELEMENTS -------------------
+  CHECKOUT CSS?  -------------------
 */
 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  letter-spacing: 0.8px;
+  margin-top: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin:3rem;
+}
+
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #f0eee2;
+}
+
+/* MAKE THEM ALIGN T LEFT*/
+
+li {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.8;
+
+}
+
+li a {
+  float: left;
+  font-family:"Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  letter-spacing: 0.8;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* HOVER STATE */
+li a:hover {
+  background-color: #f0eee2;
+}
+
+/* LINK STATES TO CHANGE ACCORDINGLY  */
+a:link, a:visited {
+  color: #b4876e;
+}
+
+a:hover {
+  color: #e2d5b7;
+}
 
 
 
-/*
-  COMBINED ELEMENTS -------------------
-*/
+
+
+h6 {
+  font-family:"PlayfairDisplay", serif;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+/* CONTAINING ALL TEXT INPUTS IN ONE BOX */
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  decoration: none;
+}
+
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+/* PRICE STYLING */
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* RESPONSIVE*/
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
