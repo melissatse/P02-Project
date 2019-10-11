@@ -139,7 +139,7 @@ a {
 }
 
 /* TEXT STYLING FOR: submit and reset, labels, and intext links */
-.submit-style , .reset-style , label , .intext-link{
+.submit-style , .reset-style , .intext-link{
   font-family: 'DM Serif Display', serif;
   font-weight: 300;
 }
@@ -365,14 +365,7 @@ margin-top: 0;
 
 /* PAYMENT FORM STYLING */
 
-.payment-form {
-  font-family:"Lato", sans-serif;
-  font-weight: 300;
-  font-size: 0.8em;
-  max-width: 500px;
-  padding: 50px;
-  border: 2px solid black;
-}
+
 
 .fill {
   display:block;
