@@ -152,6 +152,19 @@ input[type=text] {
 }
 
 
+input[type=search]:focus  {
+outline: none;
+color:#b4876e;
+decoration:none;
+
+}
+
+input[type=search] {
+  padding:1em;
+  border: -0.5em solid black;
+}
+
+
 .bill-info-3 {
   display:flex;
   flex-direction: column;

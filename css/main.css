@@ -18,11 +18,12 @@ body {
 
 
 /* STYLING */
-.payment-form {
+.payment-form , .checkout-items{
   max-width: 500px;
-  padding: 50px;
+  padding: 4em;
   border: 0.05em solid #b4876e;
-  border-radius: 1em;
+  margin-bottom: 2em;
+
 }
 
 .label-style {
@@ -31,6 +32,38 @@ body {
   font-size: 0.8em;
   color:black;
 }
+
+
+
+
+/* RADIO BUTTON COLOUR UGLY AND CANNOT UNCHECK*/
+
+
+/* input[type='radio']:after {
+     width: 1.3em;
+     height: 1.3em;
+     border-radius: 4em;
+     top:-0.45em;
+     left:-0.3em;
+     position: relative;
+     background-color: #d1d3d1;
+     content: '';
+     display: inline-block;
+     visibility: visible;
+     border: 2px solid white;
+ }
+
+input[type='radio']:checked:after {
+         width: 1.3em;
+         height: 1.3em;
+         border-radius: 4em;
+         position: relative;
+         background-color: #b4876e;
+         content: '';
+         display: inline-block;
+         visibility: visible;
+         border: 2px solid white;
+} */
 
 .element {
   padding-bottom: 2rem;
@@ -107,7 +140,7 @@ figcaption {
 
 p , li {
   font-family: 'Lato', sans-serif;
-  font-size: 0.7em;
+  font-size: 1em;
   font-weight: 300;
   letter-spacing: 0.08em;
 }
@@ -185,22 +218,12 @@ a {
 
 /* SECTION TITLES */
 
-.id-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #716529;
-}
 
-/* TEXT STYLING FOR: submit and reset, labels, and intext links */
-.submit-style , .reset-style {
-  font-family: 'DM Serif Display', serif;
-  font-weight: 300;
-}
 
 /* IN TEXT LINK STYLING */
 .intext-link , .cite {
   text-decoration: none;
-color: #b4876e;
+  color: #b4876e;
 }
 
 .intext-link:hover , .cite:hover {
@@ -223,10 +246,9 @@ nav {
 
 /* NAVIGATION STYLING */
 
-@media (min-width: 20em) {
+
 .button-nav-main {
-  /* display: inline-flex; */
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 0.7rem;
   display: flex;
@@ -235,30 +257,33 @@ nav {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   background-color: #b4876e;
-  color: #f0eee3;
+  color:#f0eee3;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
-  /* flex-direction: row; */
   margin-top: 0.5em;
 }
 
 .button-nav-main:hover, .button-nav-main:focus {
   background-color: #f0eee3;
   color: #b4876e;
+
 }
+
+@media (min-width: 20em) {
+  /* display: inline-flex; */
 
 }
 
 @media (min-width: 50em) {
 
-
+}
 .button-nav-main {
   display: inline-flex;
   flex: 1;
 }
 
-}
+
 
 @media (min-width: 20em) {
 .box {
@@ -294,10 +319,6 @@ nav {
 }
 
 
-
-.Price {
-  font-weight: 500;
-}
 
 }
 
@@ -339,29 +360,26 @@ nav {
 
 
 .object-description {
-  margin-top: 0px;
-  margin-bottom:0px;
+  margin-top: -0.5em;
+  margin-bottom:0.5em;
   max-width: 300px;
   line-height: 1.5;
 }
 
 
-.Price {
-  font-weight: 500;
-}
 
 }
 
 
 /* CHECKOUT CART STYLING */
 
-.checkout-items {
+/* .checkout-items {
   display:flex;
   flex-direction: column;
   max-width: 500px;
   padding: 50px;
   border: 2px solid black;
-}
+} */
 
 
 .row1 {
@@ -426,7 +444,7 @@ margin-top: 0;
 
 
 
-.bill-info-1 {
+.bill-info-1, {
 
   display:flex;
   flex-direction: column;
@@ -460,6 +478,7 @@ decoration:none;
 
 }
 
+
 input[type=text] {
   padding:1em;
   border: 1px solid black;
@@ -475,8 +494,8 @@ input[type=text] {
 /* Styling for basic buttons */
 .button-nav , .submit-style, .reset-style , .button-addtocart {
   display: inline-block;
-  padding: 0.6em;
-  color: #f0eee3;
+  padding: 0.3em 0.8em 0.3em 0.8em;
+  color: #f0eee2;
   background-color: #b4876e;
   text-decoration: none;
   transition-property: background-color;
@@ -510,13 +529,25 @@ input[type=text] {
   background-color: #f0eee3;
   color:#b4876e;
 
-
+}
 
 
 #citations ul a {
   font-size: 10pt;
 }
 
+
+.Price {
+  font-weight: 500;
+  margin-top:1em;
+}
+
+.Price-total{
+  font-weight: 500;
+  margin-top:1em;
+  margin-bottom: -0.6em;
+
+}
 
 
 /*
@@ -568,9 +599,9 @@ li a:hover {
 }
 
 /* LINK STATES TO CHANGE ACCORDINGLY  */
-a:link, a:visited {
-  color: #b4876e;
-}
+/* a:link, a:visited {
+  color: red;
+} */
 
 a:hover {
   color: #e2d5b7;
