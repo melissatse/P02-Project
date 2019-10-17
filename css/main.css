@@ -1,15 +1,35 @@
 /*
   STYLE GUIDE STYLING
   Default styling for the style guide
+
+  COLOURS:
+
+  BLACK: #000000;
+  DARK BLUE: #2b2c42;
+  PALE BLUE: #8d99ae;
+  TAN: #b4876e;
+  BEIGE: #f0eee2;
 */
 body {
-  /* font-family: sans-serif; */
   padding: 2rem;
   margin:3rem;
   box-sizing: border-box;
+}
 
 
+/* STYLING */
+.payment-form {
+  max-width: 500px;
+  padding: 50px;
+  border: 0.05em solid #b4876e;
+  border-radius: 1em;
+}
 
+.label-style {
+  font-family:"Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  color:black;
 }
 
 .element {
@@ -18,7 +38,6 @@ body {
   border-top-style: solid;
   border-top-color: black;
 }
-
 
 h3 {
   margin-top: 1rem;
@@ -35,19 +54,7 @@ p {
 nav a:hover, nav a:focus {
   text-decoration: none;
 }
-/*
-  STYLE GUIDE STYLING FOR JACOLE
 
-
-  COLOURS:
-
-  BLACK: #000000;
-  DARK BLUE: #2b2c42;
-  PALE BLUE: #8d99ae;
-  TAN: #b4876e;
-  BEIGE: #f0eee2;
-*/
-/* BACKGROUND COLOR */
 * {
   background: white;
 }
@@ -59,10 +66,9 @@ code {
 }
 
 
-
 /* BRANDING SECTION + GENERAL OVERALL STYLING  */
 
-.preloved {
+.jocale {
   font-family: 'DM Serif Display', serif;
   font-size: 3.5em;
   color: black;
@@ -186,7 +192,7 @@ a {
 }
 
 /* TEXT STYLING FOR: submit and reset, labels, and intext links */
-.submit-style , .reset-style , label , .intext-link{
+.submit-style , .reset-style {
   font-family: 'DM Serif Display', serif;
   font-weight: 300;
 }
@@ -251,19 +257,15 @@ nav {
   display: inline-flex;
   flex: 1;
 }
-/*
-.button-nav-main:hover, .button-nav-main:focus {
-  background-color: #f0eee3;
-  color: #b4876e;
-} */
 
-/* } */
-
-/* PRODUCT LISTING STYLING */
+}
 
 @media (min-width: 20em) {
+.box {
+  padding-bottom: 1.5rem;
+}
 .p-item {
-  max-width: 100%;
+  max-width: 300px;
 }
 
 .product-list {
@@ -276,11 +278,6 @@ nav {
   margin-left: 0;
 }
 
-.button-addtocart {
-  margin-top: 1em;
-  text-align: center;
-  max-width: 300px;;
-}
 
 .preloved-product {
   margin-top: 5px;
@@ -289,29 +286,21 @@ nav {
   color: #60452c;
 }
 
-
-.object-description {
-  margin-top: 0px;
-  margin-bottom:0px;
-  max-width: 300px;
-  line-height: 1.5;
+.product-subtitle {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 14pt;
+  color: #333414;
 }
 
-ul {
-  padding-left: 0;
-  margin-left: 20px;
-  line-height: 1.5;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #f0eee2;
 
-}
 
 .Price {
   font-weight: 500;
 }
 
 }
+
 
 /* PRODUCT LISTING STYLING FOR BIGGER SCREENS */
 
@@ -332,10 +321,7 @@ ul {
   margin-left: 20px;
 }
 
-.button-addtocart {
-  margin-top: 4em;
-  text-align: center;
-}
+
 
 .preloved-product {
   margin-top: 0.5em;
@@ -359,12 +345,6 @@ ul {
   line-height: 1.5;
 }
 
-ul {
-  padding-left: 0;
-  margin-left: 1.6rem;
-  line-height: 1.5;
-
-}
 
 .Price {
   font-weight: 500;
@@ -434,13 +414,6 @@ margin-top: 0;
 
 /* PAYMENT FORM STYLING */
 
-.payment-form {
-  max-width: 500px;
-  padding: 50px;
-  border: 0.05em solid #b4876e;
-  border-radius: 1em;
-}
-
 .fill {
   display:block;
   padding-top: 5%;
@@ -479,7 +452,6 @@ margin-bottom: 10px;
   max-width: 500px;
   padding-bottom:20px;
 }
-
 
 input[type=submit]:focus , input[type=reset]:focus , input[type=text]:focus  {
 outline: none;
@@ -636,14 +608,17 @@ input[type=text] {
 }
 
 
-label {
+/* label {
   font-family:"Lato", sans-serif;
   font-weight: 300;
   font-size: 0.8em;
   color:red;
   margin-bottom: 10px;
   display: block;
-}
+} */
+
+
+
 
 .icon-container {
   margin-bottom: 20px;
