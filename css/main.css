@@ -105,6 +105,8 @@ code {
   font-family: 'DM Serif Display', serif;
   font-size: 3.5em;
   color: black;
+  margin-top: -1em;
+  margin-bottom: 0.5em;
 }
 
 .branding-info {
@@ -276,6 +278,45 @@ nav {
 }
 
 @media (min-width: 50em) {
+
+
+  .product-list-grid {
+      display: flex;
+  }
+
+  .box {
+    padding: 1.5rem;
+  }
+  .p-item {
+    max-width: 100%;
+  }
+
+  .product-list {
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+
+  .preloved-product {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    max-width: 300px;
+    color: #60452c;
+  }
+
+  .product-subtitle {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 14pt;
+    color: #333414;
+  }
+
+
+  .Price {
+    font-weight: 500;
+  }
+
+
 
 }
 .button-nav-main {
@@ -458,10 +499,11 @@ margin-top: 0;
   font-size: 0.8em;
 }
 
-.bill-info-1 .input-style , .bill-info-3 .input-style {
+.bill-info-1 .input-style , .bill-info-3 {
 color: black;
-margin-top: 10px;
-margin-bottom: 10px;
+border-color: #b4876e;
+margin-top: 0.8em;
+margin-bottom: 0.8em;
 }
 
 
@@ -476,13 +518,9 @@ outline: none;
 color:#b4876e;
 decoration:none;
 
+
 }
 
-
-input[type=text] {
-  padding:1em;
-  border: 1px solid black;
-}
 
 
 .bill-info-3 {
@@ -639,14 +677,18 @@ input[type=text] {
 }
 
 
-/* label {
-  font-family:"Lato", sans-serif;
-  font-weight: 300;
-  font-size: 0.8em;
-  color:red;
-  margin-bottom: 10px;
-  display: block;
-} */
+
+input[type=search]:focus  {
+outline: none;
+color:#b4876e;
+decoration:none;
+
+}
+
+input[type=search] {
+  padding:1em;
+  border: -0.5em solid black;
+}
 
 
 
