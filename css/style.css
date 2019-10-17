@@ -1,0 +1,107 @@
+
+
+/* BRANDING SECTION + GENERAL OVERALL STYLING  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .button-nav-main {
+  display: inline-flex;
+  flex: 1;
+} */
+
+/* .button-nav-main:hover, .button-nav-main:focus {
+  background-color: #f0eee3;
+  color: #b4876e;
+} */
+
+}
+
+
+/* PRODUCT LISTING STYLING */
+
+
+/* PRODUCT LISTING STYLING FOR BIGGER SCREENS */
+
+
+
+
+
+/* CHECKOUT CART STYLING */
+
+
+
+
+
+
+
+
+/* PAYMENT FORM STYLING */
+
+
+/*
+.fill {
+  display:block;
+  padding-top: 5%;
+}
+
+.product-description {
+  display:flex;
+  flex-direction: column;
+}
+
+
+
+.bill-info-1 {
+  display:flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+
+.bill-info-1 .input-style , .bill-info-3 .input-style {
+color: black;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.bill-info-2 , .bill-info-4 {
+  display:inline-block;
+  max-width: 500px;
+  padding-bottom:20px;
+}
+
+
+input[type=submit]:focus , input[type=reset]:focus , input[type=text]:focus  {
+outline: none;
+color:#b4876e;
+decoration:none;
+
+}
+
+input[type=text] {
+  padding:1em;
+  border: 1px solid black;
+}
+
+
+.bill-info-3 {
+  display:flex;
+  flex-direction: column;
+  max-width: 200px;
+} */
