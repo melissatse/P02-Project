@@ -1,4 +1,4 @@
-.DS_Store
+*.DS_Store
 # exclude all jpeg and jpg
 /images/*.jpg
 /images/*.jpeg

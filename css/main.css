@@ -1,24 +1,29 @@
 /*
   STYLE GUIDE STYLING
   Default styling for the style guide
+
+  COLOURS:
+
+  BLACK: #000000;
+  DARK BLUE: #2b2c42;
+  PALE BLUE: #8d99ae;
+  TAN: #b4876e;
+  BEIGE: #f0eee2;
 */
 body {
-  /* font-family: sans-serif; */
   padding: 2rem;
   margin:3rem;
   box-sizing: border-box;
-
-
-
 }
 
 
 /* STYLING */
-.payment-form {
+.payment-form , .checkout-items{
   max-width: 500px;
-  padding: 50px;
+  padding: 4em;
   border: 0.05em solid #b4876e;
-  border-radius: 1em;
+  margin-bottom: 2em;
+
 }
 
 .label-style {
@@ -28,13 +33,44 @@ body {
   color:black;
 }
 
+
+
+
+/* RADIO BUTTON COLOUR UGLY AND CANNOT UNCHECK*/
+
+
+/* input[type='radio']:after {
+     width: 1.3em;
+     height: 1.3em;
+     border-radius: 4em;
+     top:-0.45em;
+     left:-0.3em;
+     position: relative;
+     background-color: #d1d3d1;
+     content: '';
+     display: inline-block;
+     visibility: visible;
+     border: 2px solid white;
+ }
+
+input[type='radio']:checked:after {
+         width: 1.3em;
+         height: 1.3em;
+         border-radius: 4em;
+         position: relative;
+         background-color: #b4876e;
+         content: '';
+         display: inline-block;
+         visibility: visible;
+         border: 2px solid white;
+} */
+
 .element {
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
 }
-
 
 h3 {
   margin-top: 1rem;
@@ -51,19 +87,7 @@ p {
 nav a:hover, nav a:focus {
   text-decoration: none;
 }
-/*
-  STYLE GUIDE STYLING FOR JACOLE
 
-
-  COLOURS:
-
-  BLACK: #000000;
-  DARK BLUE: #2b2c42;
-  PALE BLUE: #8d99ae;
-  TAN: #b4876e;
-  BEIGE: #f0eee2;
-*/
-/* BACKGROUND COLOR */
 * {
   background: white;
 }
@@ -75,13 +99,14 @@ code {
 }
 
 
-
 /* BRANDING SECTION + GENERAL OVERALL STYLING  */
 
-.preloved {
+.jocale {
   font-family: 'DM Serif Display', serif;
   font-size: 3.5em;
   color: black;
+  margin-top: -1em;
+  margin-bottom: 0.5em;
 }
 
 .branding-info {
@@ -117,7 +142,7 @@ figcaption {
 
 p , li {
   font-family: 'Lato', sans-serif;
-  font-size: 0.7em;
+  font-size: 1em;
   font-weight: 300;
   letter-spacing: 0.08em;
 }
@@ -195,22 +220,12 @@ a {
 
 /* SECTION TITLES */
 
-.id-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #716529;
-}
 
-/* TEXT STYLING FOR: submit and reset, labels, and intext links */
-.submit-style , .reset-style {
-  font-family: 'DM Serif Display', serif;
-  font-weight: 300;
-}
 
 /* IN TEXT LINK STYLING */
 .intext-link , .cite {
   text-decoration: none;
-color: #b4876e;
+  color: #b4876e;
 }
 
 .intext-link:hover , .cite:hover {
@@ -233,10 +248,9 @@ nav {
 
 /* NAVIGATION STYLING */
 
-@media (min-width: 20em) {
+
 .button-nav-main {
-  /* display: inline-flex; */
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 0.7rem;
   display: flex;
@@ -245,41 +259,79 @@ nav {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   background-color: #b4876e;
-  color: #f0eee3;
+  color:#f0eee3;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
-  /* flex-direction: row; */
   margin-top: 0.5em;
 }
 
 .button-nav-main:hover, .button-nav-main:focus {
   background-color: #f0eee3;
   color: #b4876e;
+
 }
+
+@media (min-width: 20em) {
+  /* display: inline-flex; */
 
 }
 
 @media (min-width: 50em) {
 
 
+  .product-list-grid {
+      display: flex;
+  }
+
+  .box {
+    padding: 1.5rem;
+  }
+  .p-item {
+    max-width: 100%;
+  }
+
+  .product-list {
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+
+  .preloved-product {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    max-width: 300px;
+    color: #60452c;
+  }
+
+  .product-subtitle {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 14pt;
+    color: #333414;
+  }
+
+
+  .Price {
+    font-weight: 500;
+  }
+
+
+
+}
 .button-nav-main {
   display: inline-flex;
   flex: 1;
 }
-/*
-.button-nav-main:hover, .button-nav-main:focus {
-  background-color: #f0eee3;
-  color: #b4876e;
-} */
 
-/* } */
 
-/* PRODUCT LISTING STYLING */
 
 @media (min-width: 20em) {
+.box {
+  padding-bottom: 1.5rem;
+}
 .p-item {
-  max-width: 100%;
+  max-width: 300px;
 }
 
 .product-list {
@@ -292,11 +344,6 @@ nav {
   margin-left: 0;
 }
 
-.button-addtocart {
-  margin-top: 1em;
-  text-align: center;
-  max-width: 300px;;
-}
 
 .preloved-product {
   margin-top: 5px;
@@ -305,29 +352,17 @@ nav {
   color: #60452c;
 }
 
-
-.object-description {
-  margin-top: 0px;
-  margin-bottom:0px;
-  max-width: 300px;
-  line-height: 1.5;
+.product-subtitle {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 14pt;
+  color: #333414;
 }
 
-ul {
-  padding-left: 0;
-  margin-left: 20px;
-  line-height: 1.5;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #f0eee2;
+
 
 }
 
-.Price {
-  font-weight: 500;
-}
-
-}
 
 /* PRODUCT LISTING STYLING FOR BIGGER SCREENS */
 
@@ -348,10 +383,7 @@ ul {
   margin-left: 20px;
 }
 
-.button-addtocart {
-  margin-top: 4em;
-  text-align: center;
-}
+
 
 .preloved-product {
   margin-top: 0.5em;
@@ -369,29 +401,26 @@ ul {
 
 
 .object-description {
-  margin-top: 0px;
-  margin-bottom:0px;
+  margin-top: -0.5em;
+  margin-bottom:0.5em;
   max-width: 300px;
   line-height: 1.5;
 }
 
 
-.Price {
-  font-weight: 500;
-}
 
 }
 
 
 /* CHECKOUT CART STYLING */
 
-.checkout-items {
+/* .checkout-items {
   display:flex;
   flex-direction: column;
   max-width: 500px;
   padding: 50px;
   border: 2px solid black;
-}
+} */
 
 
 .row1 {
@@ -456,7 +485,7 @@ margin-top: 0;
 
 
 
-.bill-info-1 {
+.bill-info-1, {
 
   display:flex;
   flex-direction: column;
@@ -470,10 +499,11 @@ margin-top: 0;
   font-size: 0.8em;
 }
 
-.bill-info-1 .input-style , .bill-info-3 .input-style {
+.bill-info-1 .input-style , .bill-info-3 {
 color: black;
-margin-top: 10px;
-margin-bottom: 10px;
+border-color: #b4876e;
+margin-top: 0.8em;
+margin-bottom: 0.8em;
 }
 
 
@@ -488,12 +518,9 @@ outline: none;
 color:#b4876e;
 decoration:none;
 
+
 }
 
-input[type=text] {
-  padding:1em;
-  border: 1px solid black;
-}
 
 
 .bill-info-3 {
@@ -505,8 +532,8 @@ input[type=text] {
 /* Styling for basic buttons */
 .button-nav , .submit-style, .reset-style , .button-addtocart {
   display: inline-block;
-  padding: 0.6em;
-  color: #f0eee3;
+  padding: 0.3em 0.8em 0.3em 0.8em;
+  color: #f0eee2;
   background-color: #b4876e;
   text-decoration: none;
   transition-property: background-color;
@@ -540,13 +567,25 @@ input[type=text] {
   background-color: #f0eee3;
   color:#b4876e;
 
-
+}
 
 
 #citations ul a {
   font-size: 10pt;
 }
 
+
+.Price {
+  font-weight: 500;
+  margin-top:1em;
+}
+
+.Price-total{
+  font-weight: 500;
+  margin-top:1em;
+  margin-bottom: -0.6em;
+
+}
 
 
 /*
@@ -598,9 +637,9 @@ li a:hover {
 }
 
 /* LINK STATES TO CHANGE ACCORDINGLY  */
-a:link, a:visited {
-  color: #b4876e;
-}
+/* a:link, a:visited {
+  color: red;
+} */
 
 a:hover {
   color: #e2d5b7;
@@ -638,14 +677,18 @@ input[type=text] {
 }
 
 
-/* label {
-  font-family:"Lato", sans-serif;
-  font-weight: 300;
-  font-size: 0.8em;
-  color:red;
-  margin-bottom: 10px;
-  display: block;
-} */
+
+input[type=search]:focus  {
+outline: none;
+color:#b4876e;
+decoration:none;
+
+}
+
+input[type=search] {
+  padding:1em;
+  border: -0.5em solid black;
+}
 
 
 
