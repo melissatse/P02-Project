@@ -238,13 +238,8 @@ a {
   opacity: 0.5;
 }
 
-nav {
-  display: flex;
-  width: 100%;
-}
-.wrapper {
-  width:100%;
-}
+
+
 
 /* NAVIGATION STYLING */
 
@@ -253,17 +248,16 @@ nav {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 0.7rem;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+padding: 0.5rem;
   background-color: #b4876e;
   color:#f0eee3;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
-  margin-top: 0.5em;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+
 }
 
 .button-nav-main:hover, .button-nav-main:focus {
@@ -272,13 +266,12 @@ nav {
 
 }
 
-@media (min-width: 20em) {
-  /* display: inline-flex; */
 
-}
+
 
 @media (min-width: 50em) {
 
+  /* product list styling */
 
   .product-list-grid {
       display: flex;
@@ -315,18 +308,18 @@ nav {
   .Price {
     font-weight: 500;
   }
-
-
-
-}
-.button-nav-main {
-  display: inline-flex;
-  flex: 1;
+/* CLOSING TAG FOR 50 EM */
 }
 
 
 
+/* SMALLER SCREENS STYLING */
 @media (min-width: 20em) {
+
+.button-nav-main {
+  display: flex;
+  margin-bottom: 0.2em;
+}
 .box {
   padding-bottom: 1.5rem;
 }
@@ -364,10 +357,19 @@ nav {
 }
 
 
-/* PRODUCT LISTING STYLING FOR BIGGER SCREENS */
+/*  STYLING FOR BIGGER SCREENS */
 
 
 @media (min-width: 50em) {
+/* NAVIGATION */
+    nav {
+      display: flex;
+    }
+    .button-nav-main {
+    display: flex;
+  flex-wrap: wrap;
+    }
+/* PRODUCT LISTING STYLING */
 .p-item {
   max-width: 100%;
 }
@@ -407,6 +409,15 @@ nav {
   line-height: 1.5;
 }
 
+/* checkout styling */
+.row2 {
+  display:flex;
+}
+
+.row2 .column1 {
+  margin-right: 50px;
+}
+
 
 
 }
@@ -440,9 +451,7 @@ margin-top: 0;
   margin-top: 2pt;
 }
 
-.row2 {
-  display:flex;
-}
+
 
 .row2 p {
   margin-bottom:0;
@@ -451,9 +460,7 @@ margin-top: 0;
   line-height: 1.5;
 }
 
-.row2 .column1 {
-  margin-right: 50px;
-}
+
 
 .row3 .column1 p {
   margin: 0;
@@ -532,16 +539,17 @@ decoration:none;
 /* Styling for basic buttons */
 .button-nav , .submit-style, .reset-style , .button-addtocart {
   display: inline-block;
-  padding: 0.3em 0.8em 0.3em 0.8em;
+  padding: 0.5em 1em 0.5em 1em;
   color: #f0eee2;
-  background-color: #b4876e;
+  background-color: #c39c87;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 0.8em;
-  border-radius: 0.5rem;
+  font-size: 0.9em;
+  border-style: none;
+  border-radius: 0.2em;
 
 }
 
@@ -677,18 +685,53 @@ input[type=text] {
 }
 
 
-
+  /* SEARCH STYLING */
 input[type=search]:focus  {
 outline: none;
 color:#b4876e;
 decoration:none;
-
 }
 
 input[type=search] {
   padding:1em;
   border: -0.5em solid black;
 }
+
+
+
+/* input[type=radio] {
+  decoration: none;
+} */
+
+/* input[type='radio']:after {
+       width: 15px;
+       height: 15px;
+       border-radius: 15px;
+       top: -2px;
+       left: -1px;
+       position: relative;
+       background-color: #d1d3d1;
+       content: '';
+       display: inline-block;
+       visibility: visible;
+       border: 2px solid white;
+   }
+
+   input[type='radio']:checked:after {
+       width: 15px;
+       height: 15px;
+       border-radius: 15px;
+       top: -2px;
+       left: -1px;
+       position: relative;
+       background-color: #966448;
+       content: '';
+       display: inline-block;
+       visibility: visible;
+       border: 2px solid white;
+   } */
+
+
 
 
 
