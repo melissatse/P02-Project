@@ -11,9 +11,7 @@
   BEIGE: #f0eee2;
 */
 
-* {
-  margin: 1px;
-}
+
 body {
   padding: 1rem;
   margin:1rem;
@@ -120,12 +118,11 @@ code {
 } */
 
 
-
 .user-image{
   max-width: 25%;
   height:auto;
   decoration:none;
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 .product-image{
@@ -245,8 +242,6 @@ a {
 }
 
 
-
-
 /* NAVIGATION STYLING */
 
 /* nav {
@@ -276,9 +271,7 @@ a {
   background-color: #f0eee3;
   /* color: #b4876e; */
   color: black;
-
 }
-
 
 
 

@@ -4,6 +4,7 @@
 /* HEADER + JOCALE LOGO */
 header {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .center {
 position: absolute;
@@ -12,6 +13,7 @@ position: absolute;
 left: 50%;
 margin-right: -50%;
 transform: translate(-50%, -50%)
+
 }
 
 .checkout-button {
@@ -22,14 +24,26 @@ transform: translate(-50%, -50%)
   transform: translate(-50%, -100%)
 }
 
-
 .content {
-display: inline-block;
+display: block;
 text-align: center;
 margin-top: 1.5rem;
 }
-.hello p  {
-  text-align: left;
+
+.portion {
+  font-size: 1rem;
+  line-height: 2rem;
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
 }
+
+.portion p {
+    text-align: left;
+}
+
+/* .branding p  {
+  text-align: left;
+  /* max-width: 800px; */
+  margin: auto;
+  font-size: 1rem;
+} */
