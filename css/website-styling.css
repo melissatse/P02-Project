@@ -1,0 +1,49 @@
+/* For addiitonal styling that pertains to the website and its responsiveness */
+
+
+/* HEADER + JOCALE LOGO */
+header {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.center {
+position: absolute;
+/* display: inline-block; */
+/* margin-top: 10%; */
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)
+
+}
+
+.checkout-button {
+  width: 30px;
+  position: absolute;
+  left: 90%;
+  margin-right: 25%;
+  transform: translate(-50%, -100%)
+}
+
+.content {
+display: block;
+text-align: center;
+margin-top: 1.5rem;
+}
+
+.portion {
+  font-size: 1rem;
+  line-height: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.portion p {
+    text-align: left;
+}
+
+/* .branding p  {
+  text-align: left;
+  /* max-width: 800px; */
+  margin: auto;
+  font-size: 1rem;
+} */
