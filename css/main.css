@@ -10,9 +10,11 @@
   TAN: #b4876e;
   BEIGE: #f0eee2;
 */
+
+
 body {
-  padding: 2rem;
-  margin:3rem;
+  padding: 1rem;
+  margin:1rem;
   box-sizing: border-box;
 }
 
@@ -103,16 +105,17 @@ code {
 
 .jocale {
   font-family: 'DM Serif Display', serif;
-  font-size: 3.5em;
+  /* font-size: 3.5em; */
+  font-size: 4em;
   color: black;
   margin-top: -1em;
   margin-bottom: 0.5em;
+  text-decoration: none;
 }
 
-.branding-info {
+/* .branding-info {
   max-width: 500px;
-}
-
+} */
 
 
 .user-image{
@@ -239,39 +242,46 @@ a {
 }
 
 
-
-
 /* NAVIGATION STYLING */
 
-
+/* nav {
+  border: solid 1px black;
+} */
 .button-nav-main {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 0.7rem;
-padding: 0.5rem;
+  padding: 0.5rem;
   background-color: #b4876e;
+  /* background: white; */
   color:#f0eee3;
+  /* color: black; */
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
   text-align: center;
   justify-content: center;
   width: 100%;
+  border: solid 1px black;
+  margin: 0;
 
 }
 
 .button-nav-main:hover, .button-nav-main:focus {
   background-color: #f0eee3;
-  color: #b4876e;
-
+  /* color: #b4876e; */
+  color: black;
 }
-
 
 
 
 @media (min-width: 50em) {
 
   /* product list styling */
+
+  .button-nav-main {
+      margin-right: -1px;
+  }
 
   .product-list-grid {
       display: flex;
@@ -324,7 +334,8 @@ padding: 0.5rem;
   padding-bottom: 1.5rem;
 }
 .p-item {
-  max-width: 300px;
+  /* max-width: 300px; */
+  max-width: 100%;
 }
 
 .product-list {
@@ -368,6 +379,7 @@ padding: 0.5rem;
     .button-nav-main {
     display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
     }
 /* PRODUCT LISTING STYLING */
 .p-item {
