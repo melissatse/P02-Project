@@ -18,14 +18,31 @@ body {
   box-sizing: border-box;
 }
 
+.cart-container{
+  display: flex;
+  flex-wrap: wrap;
+
+}
 
 /* STYLING */
-.payment-form , .checkout-items{
+.payment-form, .contact-form{
+
+/* display: inline-block;
+  flex-wrap: wrap; */
   max-width: 500px;
   padding: 4em;
+  margin-left: 3em;
   border: 0.05em solid #b4876e;
   margin-bottom: 2em;
+}
 
+.checkout-items{
+
+  max-width: 500px;
+  padding: 4em;
+  margin-left: 3em;
+  border: 0.05em solid #b4876e;
+  margin-bottom: 2em;
 }
 
 .label-style {
@@ -34,6 +51,24 @@ body {
   font-size: 0.8em;
   color:black;
 }
+
+
+
+
+.custom-select {
+  position: relative;
+  font-family: Lato;
+  padding:1em 1em 1em 0;
+  background-color: transparent;
+
+}
+
+input:focus, textarea:focus, select:focus{
+       outline: none;
+   }
+
+
+
 
 
 
@@ -504,7 +539,7 @@ margin-top: 0;
 
 
 
-.bill-info-1, {
+.bill-info-1, .contact-info-1 {
 
   display:flex;
   flex-direction: column;
@@ -518,12 +553,21 @@ margin-top: 0;
   font-size: 0.8em;
 }
 
-.bill-info-1 .input-style , .bill-info-3 {
+.bill-info-1, .input-style , .bill-info-3, .contact-info-1 {
 color: black;
 border-color: #b4876e;
 margin-top: 0.8em;
 margin-bottom: 0.8em;
 }
+
+.message-style{
+  color: black;
+  border-color: #b4876e;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  height:10em;
+}
+
 
 
 .bill-info-2 , .bill-info-4 {
@@ -583,7 +627,7 @@ decoration:none;
 
 }
 
-.button-nav:hover, .button-nav:focus , .button-addtocart:hover, .button-addtocart:focus, .submit-style:hover, .submit-style:focus, .reset-style:hover, .reset-style:focus {
+.button-nav:hover, .button-nav:focus , .button-addtocart:hover, .button-addtocart:focus, .button-landing:hover, .button-landing:focus, .submit-style:hover, .submit-style:focus, .reset-style:hover, .reset-style:focus {
   background-color: #f0eee3;
   color:#b4876e;
 
@@ -608,8 +652,69 @@ decoration:none;
 }
 
 
+.bg {
+
+  /* Full height */
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: -4em;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.landing-wrapper{
+  position:relative;
+
+}
+.button-landing{
+  margin-left: 45%;
+  margin-top: 2em;
+  transition: .5s ease;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #f0eee2;
+  background-color: #c39c87;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  border-style: none;
+  border-radius: 0.2em;
+}
+
+/* .landing img{
+  height:auto;
+} */
+
+/* .landing-btn {
+  top: 80%;
+  right:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 0.5em 1em 0.5em 1em;
+  color: #f0eee2;
+  background-color: #c39c87;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  border-style: none;
+  border-radius: 0.2em;
+
+} */
+
+
 /*
-  CHECKOUT CSS?  -------------------
+  CHECKOUT CSS?  ---
+  ----------------
 */
 
 body {
