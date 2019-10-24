@@ -3,18 +3,18 @@
 
 /* HEADER + JOCALE LOGO */
 header {
-  margin-top: 4rem;
+  /* margin-top: 1rem; */
   margin-bottom: 4rem;
 }
-.center {
-position: absolute;
-/* display: inline-block; */
-/* margin-top: 10%; */
-left: 50%;
-margin-right: -50%;
-transform: translate(-50%, -50%)
+
+
+.heading {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.5rem;
 
 }
+
 
 .checkout-button {
   width: 30px;
@@ -68,7 +68,6 @@ margin-top: 1.5rem;
   /* position: absolute; */
   /* border-radius: 0.2em; */
 
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -80,4 +79,11 @@ margin-top: 1.5rem;
   background-color: #f0eee3;
   /* color: #b4876e; */
   color: black;
+  outline:none;
+}
+
+.content-title{
+  display: block;
+  text-align: center;
+  margin-bottom: 4rem;
 }
