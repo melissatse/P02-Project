@@ -26,6 +26,13 @@ body {
 
 }
 
+
+.heading {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.5rem;
+
+}
 /* STYLING */
 .payment-form, .contact-form{
 
@@ -33,9 +40,9 @@ body {
   flex-wrap: wrap; */
   max-width: 500px;
   padding: 4em;
-  margin-left: 3em;
-  border: 0.05em solid #b4876e;
+  border: 0.05em solid black;
   margin-bottom: 2em;
+  flex:3;
 }
 
 .checkout-items{
@@ -43,8 +50,9 @@ body {
   max-width: 500px;
   padding: 4em;
   margin-left: 3em;
-  border: 0.05em solid #b4876e;
+/*  border: 0.05em solid black; */
   margin-bottom: 2em;
+  flex:1;
 }
 
 .label-style {
@@ -75,34 +83,9 @@ input:focus, textarea:focus, select:focus{
 
 
 
-/* RADIO BUTTON COLOUR UGLY AND CANNOT UNCHECK*/
+/* TESTING IAMGE HOVER */
 
 
-/* input[type='radio']:after {
-     width: 1.3em;
-     height: 1.3em;
-     border-radius: 4em;
-     top:-0.45em;
-     left:-0.3em;
-     position: relative;
-     background-color: #d1d3d1;
-     content: '';
-     display: inline-block;
-     visibility: visible;
-     border: 2px solid white;
- }
-
-input[type='radio']:checked:after {
-         width: 1.3em;
-         height: 1.3em;
-         border-radius: 4em;
-         position: relative;
-         background-color: #b4876e;
-         content: '';
-         display: inline-block;
-         visibility: visible;
-         border: 2px solid white;
-} */
 
 .element {
   padding-bottom: 2rem;
@@ -132,7 +115,7 @@ nav a:hover, nav a:focus {
 }
 
 code {
-  background-color: #e5e5e5;
+  background-color: #ddd9c3;
   padding: 0.5rem;
   display: block;
 }
@@ -210,10 +193,10 @@ a {
 }
 
 .color2 {
-  background-color: #2b2c42;
+  background-color: #ffffff;
   font-size: 1.2em;
   text-align: center;
-  color:white;
+  color:black;
   padding: 1.2em;
   max-width: 500px;
 }
@@ -633,7 +616,7 @@ decoration:none;
   font-weight: 300;
   font-size: 0.9em;
   /* border: solid 1px black; */
-  /* border-style: none; */
+  border-style: none;
   /* border-radius: 0.2em; */
 
 }
