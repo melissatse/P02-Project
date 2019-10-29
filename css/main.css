@@ -391,7 +391,7 @@ section {
 }
 .box {
   padding-bottom: 1.5rem;
-  border: solid black 1px;
+  /* border: solid black 1px; */
 }
 .p-item {
   /* max-width: 300px; */
