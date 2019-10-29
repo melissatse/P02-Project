@@ -75,6 +75,7 @@ body {
 
 input:focus, textarea:focus, select:focus{
        outline: none;
+
    }
 
 
@@ -237,6 +238,23 @@ a {
   font-style: italic;
 }
 
+.bold{
+  font-weight: 400;
+}
+.subtotal{
+  padding:-12em;
+}
+
+hr.line1 {
+  border-top: 0.1em solid black;
+}
+
+hr.line2 {
+  border-top: 0.1em dashed black;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 #text-Input{
   text-decoration: none;
  }
@@ -255,7 +273,7 @@ section {
   color: #b4876e;
 }
 
-.intext-link:hover , .cite:hover {
+.intext-link:hover , .cite:hover , .Prod-cart:hover {
   color: black;
 }
 
@@ -346,6 +364,16 @@ section {
 /* CLOSING TAG FOR 50 EM */
 }
 
+.checkout-items{
+
+  max-width: 500px;
+  padding: 4em;
+  margin-left: 3em;
+/*  border: 0.05em solid black; */
+  margin-bottom: 2em;
+  flex:1;
+}
+
 
 
 /* SMALLER SCREENS STYLING */
@@ -363,7 +391,7 @@ section {
 }
 .box {
   padding-bottom: 1.5rem;
-  border: solid black 1px;
+  /* border: solid black 1px; */
 }
 .p-item {
   /* max-width: 300px; */
@@ -398,6 +426,7 @@ section {
 .button-addtocart {
   margin-top: 1em;
 }
+
 
 
 
@@ -588,7 +617,7 @@ margin-bottom: 0.8em;
 
 input[type=submit]:focus , input[type=reset]:focus , input[type=text]:focus  {
 outline: none;
-color:#b4876e;
+color:black;
 decoration:none;
 
 }
@@ -659,6 +688,23 @@ decoration:none;
   margin-top:1em;
 }
 
+.Price-cart{
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-top:0.2em;
+
+}
+
+.Prod-cart{
+  font-size: 1em;
+  font-weight: 500;
+  margin-top:2em;
+  text-decoration: none;
+  color: #b4876e;
+
+
+}
+
 .Price-total{
   font-weight: 500;
   margin-top:1em;
@@ -712,11 +758,11 @@ body {
 }
 
 
-ul {
+/* ul {
   list-style-type: none;
   overflow: hidden;
   background-color: #f0eee2;
-}
+} */
 
 /* MAKE THEM ALIGN T LEFT*/
 

@@ -12,7 +12,6 @@ header {
   display: block;
   text-align: center;
   margin-bottom: 0.5rem;
-
 }
 
 
@@ -34,6 +33,11 @@ margin-top: 1.5rem;
   font-size: 1rem;
   line-height: 2rem;
   max-width: 800px;
+  margin: 0 auto;
+}
+
+.pd-portion {
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -62,28 +66,51 @@ margin-top: 1.5rem;
 }
 
 .button-landing, .button-landing-2{
-  /* margin-left: 45%;
-  margin-top: 2em; */
-
   transition: .5s ease;
-  /* padding: 0.5em 1em 0.5em 1em; */
   padding: 1rem 2rem 1rem 2rem;
-  /* color: #f0eee2; */
   color: black;
-  /* color: black; */
-  /* background-color: #c39c87; */
-  /* background-color: Transparent; */
   background-color: rgb(255,255,255,0.65);
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.25em;
   border: 1.25px solid black;
-  /* position: absolute; */
-  /* border-radius: 0.2em; */
-  /* -ms-transform: translate(-50%, -50%); */
+}
+
+.button-addtocart2 {
+  background-color: #f0eee3;
+  color: black;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.button-back{
+  background-color: #ffffff;
+  color: black;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  /* padding: 0.5em 1em 0.5em 1em; */
+  padding: 1em 2em 1em 2em;
+  border: 1px solid black;
+  display:flex;
+  justify-content: center;
+  margin-top: 1em;
+
 }
 
 .button-landing{
@@ -93,12 +120,20 @@ margin-top: 1.5rem;
     transform: translate(-50%, -50%);
 }
 
-.button-landing:hover, .button-landing:focus, .button-landing-2:hover, .button-landing-2:focus {
+.button-landing:hover, .button-landing:focus,
+.button-landing-2:hover, .button-landing-2:focus{
   background-color: #f0eee3;
   /* color: #b4876e; */
   color: black;
   outline:none;
 }
+
+ .button-addtocart2:hover, .button-addtocart2:focus  {
+background-color: #b4876e;
+color: white;
+}
+
+
 
 .bl-2 {
   text-align: center;
@@ -134,6 +169,21 @@ margin-top: 1.5rem;
   display: flex;
 }
 
+.pd-style2 {
+  border: 0.25px solid black;
+}
+.pd-style  {
+  background-color: rgb(240, 238, 227, 0.1);
+}
+
+.b-atc2 {
+  margin-top: 3rem;
+}
+
+
+
+
+
 
 
 
@@ -150,6 +200,56 @@ margin-top: 1.5rem;
     max-height: 100%;
   }
 
+  .product-details {
+    display: block;
+  }
+
+
+  .pd-column1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+
+  }
+
+  .pd-item {
+  max-width:100%;
+    /* margin-right:0; */
+      margin-right: 0.5rem;
+  }
+
+  .p2-item {
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
+
+}
+
+@media (min-width: 640px) {
+  .product-details {
+    display: block;
+  }
+
+
+  .pd-column1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+
+  }
+
+  .pd-item {
+  max-width:100%;
+    /* margin-right:0; */
+    margin-right: 0.5rem;
+  }
+
+  .p2-item {
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
 }
 
 
@@ -165,14 +265,21 @@ margin-top: 1.5rem;
     flex-direction: row;
   }
 
-}
+    .choice-img {
+      max-width: 100%;
+    }
 
-@media (min-width: 40em) {
-
-  /* .product-choices {
+  /* .product-details {
     display: flex;
     flex-direction: column;
   } */
+
+}
+
+
+
+@media (min-width: 40em) {
+
 
   .landing-wrapper2 {
     flex-direction: row;
@@ -184,31 +291,45 @@ margin-top: 1.5rem;
 
   .choice-img {
     max-width: 100%;
-    /* max-height: 100%; */
-    /* flex:1; */
   }
-
-  /* .grid-col-1 {
-    display: block;
-  } */
 
   .grid-col-1 {
     display: flex;
     flex-direction: row;
   }
-
 }
 
-@media (min-wdtih: 50em) {
+@media (min-width: 50em) {
 
-  .grid-col-1 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* .product-list-grid {
+    .product-details {
       display: flex;
-  } */
+
+    }
+
+    .p2-item {
+      max-width: 100%;
+      margin-top:1px;
+    }
+
+    .pd-column1 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pd-item {
+      max-width: 120px;
+      margin-bottom: 0.3rem;
+    }
+
+    .pd-column3 {
+      margin-left: 2rem;
+      max-width: 300px;
+    }
+
+    .b-atc2 {
+      text-align: center;
+    }
+
 
 
 }
