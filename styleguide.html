@@ -22,7 +22,9 @@
     <header>
         <!-- <p class ="jocale"> -->
         <!-- <h1 class ="jocale">Jocole.</h1> -->
-    <a href="website/home.html" class="jocale">Jocole.</a>
+        <div class="heading">
+        <a href="home.html" class="jocale center">Jocale.</a>
+      </div>
 
   </header>
   <nav>
@@ -43,7 +45,7 @@
         <section class="element">
           <div class="branding-info">
           <h3> Who We Are</h3>
-          <p>Jocole. means "Jewelry" in latin creating handcrafted jewelry in Canada. We believe that luxury should be affordable and accessible without compromosing quality, so we strive to deliver well-made, longlasting, and classic jewelry to last you a lifetime. </p>
+          <p>Jocale. means "Jewelry" in latin creating handcrafted jewelry in Canada. We believe that luxury should be affordable and accessible without compromosing quality, so we strive to deliver well-made, longlasting, and classic jewelry to last you a lifetime. </p>
           <h3> Who We Are Made For</h3>
           <p> We are made for the people that live life in a slow fashion mind-set. Investing in pieces for the quality and classic style, and knowing that these pieces accentuate the beauty of the owner. More importantly, we are inspired you; a real, smart, and confident individual. </p>
 
@@ -53,7 +55,7 @@
             <img class = "user-image" src ="images/persona_3.png" alt= "this should be jocale's persona">
           <figcaption> Our inspiration comes from you; real, smart, mindful women. </figcaption>  </div>
         </figure>
-          <h3> Why Choose Jocole </h3>
+          <h3> Why Choose Jocale </h3>
           <p>We pride ourself of our jewelry making process, only working with the top-jewelers in Canada with the same ethical principles us. While we strive to ensure a high-quality product for you, we mke sure that you never pay more than what you should. </p>
           <div>
 
@@ -69,18 +71,17 @@
 
           <h4> Title & Subtitle Choice</h4>
 
-            <p class="recoleta"> This is the Lato Font. </p>
+            <p class="lato-font"> This is the Lato Font for main headings. </p>
 
           <h4> Subtext/Description Choice</h4>
 
-          <p class="lato-font">This is the Lato Font.</p>
+          <p class="price">This is the Lato Font for product subtitles.</p>
 
 
           <h3> Color Palette</h3>
           <p>Various shades within this color palette will be used in Jacole's branding.</p>
           <p class="color1">#000000 (black)</p>
-          <p class="color2">#2b2c42 (dark blue)</p>
-          <p class="color3">#8d99ae (pale blue)</p>
+          <p class="color2">#fffff (white)</p>
           <p class="color4">#f0eee2 (beige)</p>
           <p class="color5">#b4876e (tan)</p>
 
@@ -118,13 +119,16 @@
 
 
         <h4>CSS selector:</h4>
-        <p>.button-nav</p>
+        <p>.button-addtocart</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        <code>   &lt;a class="button-addtocart" href="checkout.html">Add to Cart&lt;/a&gt;/code&gt;
+        </code>
+
 
         <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Menu</a>
+        <a class="button-addtocart" href="checkout.html">Add to Cart</a>
+
 
       </section>
 
@@ -144,6 +148,7 @@
         <h4>Rendered element:</h4>
       <input type = "submit" class ="submit-style">
         <input type = "reset" class ="reset-style">
+
       </section>
 
 
@@ -154,14 +159,23 @@
         <p>.input-style</p>
 
         <h4>Sample code:</h4>
-
+      <code>
+        &lt;label for = "first-name" class="label-style"&gt; Enter your first Name&lt;/label&gt;
+      </code>
+      <code>
+        &lt;input id = "first-name" type = "text" class ="input-style"&gt;
+        &lt;input id = "submit-input" type = "submit" class="submit-style"&gt;
+      </code>
 
         <h4> Rendered element:</h4>
-        <label class ="italic" for="search">What are you looking for?</label>
-        <input type="search"  placeholder="Diamond Cuff" name="search">   <input class="submit-style" type="submit" value="Search">
 
+        <div class="bill-info-4">
 
+        <label for = "first-name" class="label-style"> Enter your first Name</label>
+        <input id = "first-name" type = "text" class ="input-style">
+        <input id = "submit-input" type = "submit" class="submit-style">
 
+</div>
       </section>
 
 
@@ -169,7 +183,7 @@
         <h3>Radio Button with Label</h3>
 
         <h4>CSS selector:</h4>
-        <p>.input-style</p>
+        <p>.radio-input1</p>
 
         <h4>Sample code:</h4>
         <code>&lt;label for = "radio-input1"> one size&lt;/label&gt;</code>
@@ -186,14 +200,15 @@
         <h3>Image as a Link</h3>
 
         <h4>CSS selector:</h4>
-        <p>.photo-link</p>
+        <p>.p-item photo-linkk</p>
 
         <h4>Sample code:</h4>
         <code>&lt;a href = "https://www.heroine.com/"&gt;&lt;img src="images/products/bags/diorsaddle-small.jpg" alt= "bag" class ="photo-link"&gt;&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
-        <a href = "https://www.heroine.com/"><img class ="user-image photo-link" src="images/necklaces/necklace_3.jpg" alt= "necklace_1"></a>
-      </section>
+
+        <a href = "https://www.heroine.com/"><img class ="user-image photo-link" src="images/necklaces/necklace_6.jpg" alt= "necklace_1"></a>
+      </div>
 
 
     </section>
@@ -209,23 +224,34 @@
         <h3 class="id-title">Headings</h3>
 
         <h4>CSS selector:</h4>
-        <p>.preloved-tl</p>
+        <p>.button-landing</p>
         <p>.preloved-menu</p>
         <p>.preloved-product</p>
         <p>.product-subtitle</p>
 
       <h4>Sample code:</h4>
 
-      <code>&lt;h2 class="preloved-tl"&gt;Heading 2 - Titles&lt;/h2&gt;</code>
-      <code>&lt;h3 class="preloved-menu"&gt;Heading 3 - Menu Title&lt;/h3&gt;</code>
-      <code>&lt;h4 class ="preloved-product"&gt;Heading 4 - Product Titles&lt;/h4&gt;</code>
-      <code>&lt;h5 class ="product-subtitle">Heading 5 - Description Subtitles&lt;/h5&gt;</code>
+      <code>&lt;h2 class="page-title"&gt;Heading 3 - Page Titles&lt;/h2&gt;</code>
+      <code>&lt;h3 class="product-title"&gt;Heading 4 - Product Title&lt;/h3&gt;</code>
+      <code>&lt;h4 class ="object-description"&gt;Heading 5 - Product Description&lt;/h4&gt;</code>
+      <code>&lt;h5 class ="Price">Heading 6 - Price Subtitles&lt;/h5&gt;</code>
 
       <h4>Rendered element:</h4>
-        <h2 class="preloved-tl">Heading 2 - Titles</h2>
-        <h3 class="preloved-menu">Heading 3 - Menu Title</h3>
-        <h4 class ="preloved-product">Heading 4 - Product Titles</h4>
-        <h5 class ="product-subtitle">Heading 5 - Description Subtitles</h5>
+
+        <h2 class ="page-title">Heading 3 - Page Titles</h2>
+
+        <h3 class ="product-title">Heading 4 - Product Titles</h3>
+
+        <p class="object-description">
+        Heading 5 - Product Description</p>
+
+        <h5 class ="Price">Heading 6 - Price Subtitles</h5>
+
+        <h4>Rendered element on website:</h4>
+        <h4 class ="preloved-product">Pearl Earrings</h4>
+          <p class="Price">$425 CAD</p>
+          <p class="object-description">
+            14k Yellow Gold, Diamond</p>
 
       </section>
 
@@ -249,6 +275,7 @@
         <h3>Numbered Lists</h3>
         <h4>CSS selector:</h4>
         <p>li</p>
+        <p>ol</p>
 
         <h4>Sample code:</h4>
         <code>&lt;/ol&gt;</code>
@@ -260,10 +287,10 @@
 
         <h4>Rendered element:</h4>
         <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Cuff Earrings</li>
+          <li>Diamond Necklace</li>
+          <li>Pace Heart Necklace</li>
+          <li>Pearl Earrings</li>
         </ol>
       </section>
 
@@ -278,7 +305,7 @@
       <section class="element">
         <h3 >Main Navigation</h3>
 <h4>CSS selector:</h4>
-<p>.button-main-nav</p>
+<p>.button-addtocart</p>
 
 <h4>Sample code:</h4>
 
@@ -299,362 +326,36 @@
           <a class="button-nav-main" href="#">CHECKOUT</a>
         </nav>
 
-      </section>
 
-      <section class="element">
-
-    <h3>Product/Service Listing</h3>
-
-    <h4>CSS selector:</h4>
-    <p>.product-list</p>
-
-    <h4>Sample code:</h4>
-
-    <code>&lt;div class="product-list"&gt;</code>
-      <code>&lt;img src="images/products/bags/diorsaddle-small.jpg" alt= "dior" class = "p-item photo-link" &gt;</code>
-
-      <code>&lt;div class ="product-description p-item"&gt;</code>
-
-        <code>&lt;h4 class ="preloved-product"&gt;Dior Saddle Bag ('03)&lt;/h4&gt;</code>
-
-        <code>&lt;h5 class ="product-subtitle"&gt; About this product&lt;/h5&gt;</code>
-
-        <code>&lt;p class="Price">$350.00&lt;/p&gt;</code>
-
-        <code>&lt;p class="object-description"&gt;
-        This preloved Dior saddle bag is from the spring/summer collection of 2003. A chic vintage piece to add to color to your wardrobe!
-        Dimensions are: 9 x 2 x 5 in&lt;/p&gt;</code>
-
-        <code>&lt;ul&gt;</code>
-          <code>&lt;li&gt; Condition: Good. Minor scuffs from wear.&lt;/li&gt;</code>
-          <code>&lt;li&gt; Comes with a dustbag.&lt;/li&gt;</code>
-        <code> &lt;li&gt; Made in Spain.&lt;/li&gt;</code>
-
-      <code>&lt;/ul&gt;</code>
-
-        <code>&lt;a class="button-addtocart" href="#"&gt;Add to Cart&lt;/a&gt;</code>
-
-      <code>&lt;/div&gt;</code>
-
-  <code>&lt;/div&gt;</code>
-
-
-    <h4>Rendered element:</h4>
-
-    <!-- row -->
-  <div class="product-list-grid">
-    <div class="grid-col-1">
-        <div class="box">
-          <img src="images/necklaces/necklace_1.jpg" alt= "necklace" class ="p-item photo-link">
-          <h4 class ="preloved-product">Diamond Necklace</h4>
-          <p class="Price">$375.00 CAD</p>
-          <p class="object-description">
-            14k Yellow Gold, Diamond</p>
-          <a class="button-addtocart" href="checkout.html">Add to Cart</a>
-        </div>
-
-        <div class="box">
-          <img src="images/necklaces/necklace_2.jpg" alt= "necklace" class ="p-item photo-link">
-          <h4 class ="preloved-product">Diamond Necklace</h4>
-          <p class="Price">$275.00 CAD</p>
-          <p class="object-description">
-            14k Yellow Gold, Black Diamond</p>
-          <a class="button-addtocart" href="checkout.html">Add to Cart</a>
-        </div>
-    </div>
-    <!-- end of row -->
-
-    <div class="grid-col-1">
-        <div class="box">
-          <img src="images/necklaces/necklace_3.jpg" alt= "necklace" class ="p-item photo-link">
-          <h4 class ="preloved-product">Pave Heart Necklace</h4>
-          <p class="Price">$384.00 CAD</p>
-          <p class="object-description">
-            14k Yellow Gold, Diamond</p>
-          <a class="button-addtocart" href="checkout.html">Add to Cart</a>
-        </div>
-
-        <div class="box">
-          <img src="images/necklaces/necklace_4.png" alt= "necklace" class ="p-item photo-link">
-          <h4 class ="preloved-product">String Necklace</h4>
-          <p class="Price">$280.00 CAD</p>
-          <p class="object-description">
-            14k Yellow Gold, Diamond</p>
-          <a class="button-addtocart" href="checkout.html">Add to Cart</a>
-        </div>
-    </div>
-  </div>
+<h3>Product Listing & Checkout Template</h3>
+<p> For full style guide for <a href = "product_listing.html" class ="intext-link"> product listing </a> and <a href = "checkout.html" class ="intext-link"> checkout </a>, please visit pages from the navigation bar above.<p>
 
 </section>
+</section>
+
+<section id="citations">
+  <h2 class="id-title">Citations</h2>
 
   <section class="element">
+    <h3 >Fonts</h3>
 
+    <p>Dziedzic,L. (2010). <span class="italic">Lato.</span> Google Fonts. Retrieved from   <a href = "https://fonts.google.com/specimen/Lato" class ="intext-link">  https://fonts.google.com/specimen/Lato </a> </p>
 
-<h3>Payment Form</h3>
+    <p>Foundry, C. (n,d.). <span class="italic">DM Serif Display.</span> Google Fonts. Retrieved from   <a href = "https://fonts.google.com/specimen/Roboto" class ="intext-link"> https://fonts.google.com/specimen/Roboto </a> </p>
 
-<h4>CSS selector:</h4>
-<p>.payment-form</p>
+    <p>Roberto, C. (n,d.). <span class="italic">Roboto.</span> Google Fonts. Retrieved from   <a href = "https://fonts.google.com/specimen/Roboto" class ="intext-link">  https://fonts.google.com/specimen/Roboto </a> </p>
 
-<h4>Sample code:</h4>
-<code>&lt;div class="payment-form"&gt;</code>
-<code>&lt;h2>Shipping Information&lt;/h2&gt;</code>
-<code>&lt;div class="bill-info-1"&gt;</code>
-    <code>&lt;label for = "demo-input2"&gt; First Name:&lt;/label&gt;</code>
-    <code>&lt;input id = "demo-input2" type = "text" class ="input-style"&gt;</code>
-    <code>&lt;label for = "demo-input3"&gt; Last Name:&lt;/label&gt;</code>
-    <code>&lt;input id = "demo-input3" type = "text" class ="input-style"&gt;</code>
+    <p> <span class="italic"> Mejuri</span> [Digital Image]. (2019). Retrieved from <a href ="https://mejuri.com/" class="intext-link"> https://mejuri.com/</a> </p>
+    <p> *All photos and some content retreived from Mejuri</p>
 
-  <code>&lt;h2>Payment&lt;/h2&gt;</code>
+    <p>w3School. (n,d.). <span class="italic">The Worlds Largest Web Developer Site.</span> w3schools. Retrieved from   <a href = "https://www.w3schools.com/default.asp" class ="intext-link">  https://www.w3schools.com/default.asp </a> </p>
 
-  <code>&lt;div class="bill-info-2"&gt;</code>
-      <code>  &lt;input id = "radio-input2" type = "radio"&gt;</code>
-      <code>  &lt;label for = "radio-input2"> Paypal&lt;/label&gt;</code>
-
-      <code>&lt;/div&gt;</code>
-
-<code>&lt;input id = "submit-input" type = "submit" class="submit-style"&gt;</code>
-
-<code>&lt;/div&gt;</code>
-
-<h4>Rendered element:</h4>
-
-
-<div class="payment-form">
-<h3>Shipping Information</h3>
-<div class="bill-info-1">
-    <label for = "first-name" class="label-style"> First Name</label>
-    <input id = "first-name" type = "text" class ="input-style">
-    <label for = "last-name" class="label-style"> Last Name</label>
-    <input id = "last-name" type = "text" class ="input-style">
-    <label for = "email" class="label-style"> Email Address</label>
-    <input id = "email" type = "text" class ="input-style">
-    <label for = "address" class="label-style"> Address</label>
-    <input id = "address" type = "text" class ="input-style">
-    <label for = "city" class="label-style"> City</label>
-    <input id = "city" type = "text" class ="input-style">
-    <label for = "province" class="label-style"> Province</label>
-    <input id = "province" type = "text" class ="input-style">
-    <label for = "postal-code" class="label-style"> Postal Code</label>
-    <input id = "postal-code" type = "text" class ="input-style">
-    <label for = "phone-number" class="label-style"> Phone Number</label>
-    <input id = "phone-number" type = "text" class ="input-style">
-  </div>
-
-  <h3>Payment</h3>
-
-  <div class="bill-info-2">
-        <input id = "option-paypal" type = "radio">
-        <label for = "option-paypal" class="label-style"> Paypal</label>
-
-        <input id = "option-visa" type = "radio">
-        <label for = "option-visa" class="label-style"> Visa/Mastercard</label>
-      </div>
-
-    <div class="bill-info-1">
-        <label for = "card-name" class="label-style"> Full Name</label>
-        <input id = "demo-input10" type = "text" class ="input-style">
-
-        <label for = "card-number" class="label-style"> Card Number</label>
-        <input id = "demo-input11" type = "text" class ="input-style">
-
-        <label for = "demo-input12" class="label-style"> Expiry Date</label>
-        <input id = "demo-input12" type = "text" class ="input-style">
-
-        <label for = "demo-input13" class="label-style"> Security Code</label>
-        <input id = "demo-input13" type = "text" class ="input-style">
-    </div>
-
-    <h2>Billing Information</h2>
-
-    <div class="bill-info-4">
-          <input id = "radio-input4" type = "radio">
-          <label for = "radio-input4" class="label-style"> Same Address as Shipping</label>
-
-          <input id = "radio-input" type = "radio">
-          <label for = "radio-input" class="label-style"> Enter a Different Address</label>
-    </div>
-
-<input id = "submit-input" type = "submit" class="submit-style">
-
-</div>
-
+    <p>SFU SIAT. (2019.). <span class="italic">Code from IAT 339 class & lab</span> SFU Retrieved from  <a href = "http://www.sfu.ca/siat.html" class ="intext-link">  http://www.sfu.ca/siat.html </a> </p>
 
 
 </section>
 
 
-<section class="element">
-
-  <h3>Checkout Cart</h3>
-
-  <h4>CSS selector:</h4>
-  <p>.checkout-items</p>
-
-  <h4>Sample code:</h4>
-
-  <code>&lt;div class ="checkout-items"&gt;</code>
-
-  <code>&lt;h2&gt;Checkout&lt;/h2&gt;</code>
-
-  <code>&lt;div class="row1"&gt;</code>
-
-  <code>&lt;div class="info"&gt;</code>
-    <code>&lt;h4 class="prod-title"&gt; 1. Product Details&lt;/h4&gt;</code>
-    <code>&lt;a href ="images/products/bags/diorsaddle-small.jpg" class ="intext-link"&gt; Dior Saddle Bag &lt;a&gt;</code>
-          <code> &lt;p class="Price"&gt;$350.00&lt;/p&gt;</code>
-          <code>&lt;a href="images/products/bags/lv-pochette-small.jpg" class ="intext-link"&gt; Louis Vuitton Pochette Accessoires &lt;/a&gt;</code>
-          <code>&lt;p class="Price"&gt;$400.00&lt;/p&gt;</code>
-  <code>&lt;/div&gt;</code>
-  <code>&lt;/div&gt;</code>
-
-  <code>&lt;div class="row2"&gt;</code>
-
-    <code>&lt;div class="column1"&gt;</code>
-          <code>&lt;h4 class="prod-title" > 2. Shipping Information&lt;/h4&gt;</code>
-          <code>&lt;p&gt; Clare Maglanoc&lt;/p&gt;</code>
-          <code>&lt;p&gt; clare1234@gmail.com&lt;/p&gt;</code>
-        <code>&lt;p&gt; 2324 Walkins Street &lt;/p&gt;</code>
-          <code>&lt;p&gt; Coquitlam, BC, Canada V3E 5O1 &lt;/p&gt;</code>
-          <code>&lt;p&gt; XXX-XXX-XXXX &lt;/p&gt;</code>
-    <code>&lt;/div&gt;</code>
-
-    <code>&lt;div class="column2"&gt;</code>
-          <code>&lt;h4 class="prod-title"> 3. Billing Information&lt;/h4&gt;</code>
-
-        <code>  &lt;p&gt; Clare Maglanoc&lt;/p&gt;</code>
-          <code>&lt;p&gt; clare1234@gmail.com&lt;/p&gt;</code>
-          <code>&lt;p&gt; 2324 Walkins Street &lt;/p&gt;</code>
-          <code>&lt;p&gt; Coquitlam, BC, Canada V3E 5O1 &lt;/p&gt;</code>
-        <code> &lt;p&gt; XXX-XXX-XXXX &lt;/p&gt;</code>
-    <code>&lt;/div&gt;</code>
-  <code>&lt;/div&gt;</code>
-
-  <code>&lt;div class="row3"&gt;</code>
-
-    <code>&lt;div class="column1"&gt;</code>
-          <code>&lt;h4 class="prod-title" &gt; 4. Payment Method&lt;/h4&gt;</code>
-          <code>&lt;p&gt; Visa&lt;/p&gt;</code>
-          <code>&lt;p&gt; Clare Maglanoc&lt;/p&gt;</code>
-          <code>&lt;p&gt; 4510 **** **** 8924&lt;/p&gt;</code>
-          <code>&lt;p&gt; 03 / 22 &lt;/p&gt;</code>
-          <code>&lt;p&gt; 438 &lt;/p&gt;</code>
-    <code>&lt;/div&gt;</code>
-  <code>&lt;/div&gt;</code>
-
-  <code>&lt;div class="row4"&gt;</code>
-    <code>&lt;div class="column1"&gt;</code>
-        <code>  &lt;h4 class="prod-title" &gt; 5. Total&lt;/h4&gt;</code>
-        <code>  &lt;p class="Price"&gt; Quantity: 2 &lt;/p&gt;</code>
-        <code>  &lt;p class="Price"&gt; Subtotal: $750.00&lt;/p&gt;</code>
-        <code>  &lt;p class="Price"&gt; Shipping: $10.00&lt;/p&gt;</code>
-        <code>  &lt;p class="Price"&gt; Taxes (12%): $851.20 &lt;/p&gt;</code>
-    <code>&lt;/div&gt;</code>
-  <code>&lt;/div&gt;</code>
-
-  <code>&lt;div class="row5"&gt;</code>
-  <code>&lt;a class="button-nav" href="#"&gt;Place an order&lt;/a&gt;</code>
-  <code>&lt;input id = "reset-input" type = "reset" class = "reset-style"&gt;</code>
-  <code>&lt;/div&gt;</code>
-
-  <code>&lt;/div&gt;</code>
-
-
-
-
-  <h4>Rendered element:</h4>
-
-
-  <div class ="checkout-items">
-
-    <h2>Checkout</h2>
-
-    <div class="row1">
-
-    <div class="info">
-      <h4 class="prod-title"> 1. Product Details</h4>
-            <a href ="http://www.google.com" class ="intext-link"> Pendant Necklace </a>
-            <p class="Price">$480.00</p>
-
-            <a href="http://www.google.com" class ="intext-link"> Flower Necklace </a>
-            <p class="Price">$380.00</p>
-    </div>
-    </div>
-
-    <div class="row2">
-
-      <div class="column1">
-            <h4 class="prod-title" > 2. Shipping Information</h4>
-            <p> Clare Maglanoc</p>
-            <p> clare1234@gmail.com</p>
-            <p> 2324 Walkins Street </p>
-            <p> Coquitlam, BC, Canada V3E 5O1 </p>
-            <p> XXX-XXX-XXXX </p>
-      </div>
-
-      <div class="column2">
-            <h4 class="prod-title"> 3. Billing Information</h4>
-
-            <p> Clare Maglanoc</p>
-            <p> clare1234@gmail.com</p>
-            <p> 2324 Walkins Street </p>
-            <p> Coquitlam, BC, Canada V3E 5O1 </p>
-            <p> XXX-XXX-XXXX </p>
-      </div>
-    </div>
-
-    <div class="row3">
-
-      <div class="column1">
-            <h4 class="prod-title" > 4. Payment Method</h4>
-            <p> Visa</p>
-            <p> Clare Maglanoc</p>
-            <p> 4510 **** **** 8924</p>
-            <p> 03 / 22 </p>
-            <p> 438 </p>
-      </div>
-
-    </div>
-
-    <div class="row4">
-
-      <div class="column1">
-            <h4 class="prod-title" > 5. Total</h4>
-            <p class="Price-total"> Quantity: 2 </p>
-            <p class="Price-total"> Subtotal: $860.00</p>
-            <p class="Price-total"> Shipping: $10.00</p>
-            <p class="Price-total"> Taxes (12%): $974.40 </p>
-      </div>
-
-    </div>
-
-    <div class="row5">
-    <a class="button-nav" href="#">Place Order</a>
-    <input id = "reset-input" type = "reset" class = "reset-style">
-    </div>
-
-
-    </div>
-  </section>
-
-  </section>
-
-  <!-- // COMBINED ELEMENTS SECTION -->
-
-
-
-    <section id="citations">
-      <h2>Citations</h2>
-
-
-        <p>McInerney,Matt. Designer. 2012. <strong>Raleway [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Raleway" class ="cite">https://fonts.google.com/specimen/Raleway</a>.</p>
-        <p>Jorge Cisterna. Designer. 2018. <strong>Recoleta[Font]</strong>. Retrieved from <a href="https://www.myfonts.com/fonts/latinotype/recoleta/" class="cite">https://www.myfonts.com/fonts/latinotype/recoleta/</a>.</p>
-        <p>Figure 1: Maglanoc, Clare. Designer. 2019. <strong>Art Direction Montage [Image]</strong>.
-        <p>Figure 2: <strong>Christian Dior Multicoloured Saddlebag [Image]</strong>. Retrieved from <a href="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi2q7Pmkf_kAhXzNX0KHWHAC3QQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.ebay.it%2Fitm%2FCHRISTIAN-DIOR-MULTICOLOUR-CANVAS-VICTIM-SADDLE-BAG-HB2449-%2F233097131123&psig=AOvVaw3E8zaQtk1KUyHRoA9o9_Kg&ust=1570159326835847" class ="cite">https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi2q7Pmkf_kAhXzNX0KHWHAC3QQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.ebay.it%2Fitm%2FCHRISTIAN-DIOR-MULTICOLOUR-CANVAS-VICTIM-SADDLE-BAG-HB2449-%2F233097131123&psig=AOvVaw3E8zaQtk1KUyHRoA9o9_Kg&ust=1570159326835847</a>.</p>
-        <p>Figure 3: <strong>Louis Vuitton Pochette Accessoires [Image]</strong>. Retrieved from <a href="https://ca.louisvuitton.com/eng-ca/products/pochette-accessoires-monogram-005656" class ="cite">https://ca.louisvuitton.com/eng-ca/products/pochette-accessoires-monogram-005656</a>.</p>
-
-
-    </section>
-
-
+</section>
   </body>
 </html>
