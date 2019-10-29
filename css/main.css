@@ -325,15 +325,15 @@ section {
       margin-right: -1px;
   }
 
-  .product-list-grid {
+  /* .product-list-grid {
       display: flex;
-  }
+  } */
 
   .box {
     padding: 1.5rem;
   }
   .p-item {
-    max-width: 100%;
+    max-width: 70%;
   }
 
   .product-list {
@@ -380,10 +380,11 @@ section {
 }
 .box {
   padding-bottom: 1.5rem;
+  border: solid black 1px;
 }
 .p-item {
   /* max-width: 300px; */
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .product-list {
@@ -439,9 +440,9 @@ body {
   flex-direction: column;
     }
 /* PRODUCT LISTING STYLING */
-.p-item {
+/* .p-item {
   max-width: 100%;
-}
+} */
 
 .product-list {
   display: flex;
