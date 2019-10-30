@@ -634,8 +634,7 @@ decoration:none;
 .button-nav , .submit-style, .reset-style , .button-addtocart {
   display: inline-block;
   padding: 0.5em 1em 0.5em 1em;
-  /* color: #f0eee2; */
-  /* background-color: #c39c87; */
+
   background-color: #f0eee3;
   color: black;
   text-decoration: none;
@@ -823,11 +822,10 @@ h6 {
 }
 
 input[type=text] {
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 20px;
-  padding: 12px;
+  padding: 1.1em;
   border: 1px solid #ccc;
-  border-radius: 3px;
   decoration: none;
 }
 
