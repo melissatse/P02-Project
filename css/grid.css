@@ -110,6 +110,19 @@
 
 }
 
+@media(max-width:404px){
+  .fcolumn2 {
+    margin-top: 5em;
+    margin-left:0;
+  }
+
+  .footer-submit{
+    margin-left: 0;
+  }
+
+
+}
+
 
 /*  STYLING FOR BIGGER SCREENS */
 
@@ -268,7 +281,7 @@ max-width: 90%;
 }
 
 .fcolumn2 {
-  margin-left:0;
+   margin-left:0;
 }
 
 }
