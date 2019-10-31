@@ -25,6 +25,7 @@ footer {
 .cart-edit{
  padding-top: -20em;
   color: #b7b7b7;
+  text-decoration: none;
 }
 
 
@@ -60,6 +61,53 @@ margin-top: 1.5rem;
   border: 1.25px solid black;
 
 }
+
+.cart-container {
+  margin-top: 2rem;
+}
+
+
+/* clare */
+.con-col {
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: row; */
+  border: 1px solid black;
+}
+
+
+/* .cc1-con {
+  display:block;
+} */
+
+.cc1 {
+margin: 0 auto;
+padding-top: 3rem;
+align-items: end;
+line-height: 1.5em;
+}
+
+.prod-con {
+  padding-bottom: 1em;
+}
+
+.cc1-img {
+  margin-top: -2rem;
+  width: 150px;
+}
+
+.cc1-img2 {
+  margin-top: -1rem;
+}
+
+.con-col2 {
+  margin-top: 1rem;
+}
+
+
+
+
+
 
 
 /* BUTTON ON LANDING PAGE */

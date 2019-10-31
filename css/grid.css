@@ -253,6 +253,12 @@ flex-direction: column;
 max-width: 90%;
 }
 
+.cc1 {
+  margin-right: 1em;
+}
+
+
+
 
 }
 
@@ -282,6 +288,10 @@ max-width: 90%;
 
 .fcolumn2 {
    margin-left:0;
+}
+
+.cc1 {
+  margin-right: auto;
 }
 
 }
@@ -385,6 +395,19 @@ max-width: 90%;
 .cart-container {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.confirm {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cc1 {
+  margin-right: none;
+}
+
+.cart-container {
+  margin-top: 2rem;
 }
 
 
