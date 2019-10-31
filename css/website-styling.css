@@ -3,7 +3,6 @@
 
 /* HEADER + JOCALE LOGO */
 header {
-  /* margin-top: 1rem; */
   margin-bottom: 2rem;
 }
 
@@ -19,13 +18,9 @@ footer {
 }
 
 
-.checkout-button {
-  width: 30px;
-  position: absolute;
-  left: 90%;
-  margin-right: 25%;
-  transform: translate(-50%, -100%)
-}
+
+/* SUB TITLE FOR ORDER SUMMARY */
+
 
 .cart-edit{
  padding-top: -20em;
@@ -49,7 +44,6 @@ margin-top: 1.5rem;
 }
 
 
-
 .portion p {
     text-align: left;
 }
@@ -60,18 +54,15 @@ margin-top: 1.5rem;
 }
 
 
-
 .bg {
-  /* Full height */
   max-height: 100%;
   max-width: 100%;
-  /* margin-top: -4em; */
   border: 1.25px solid black;
 
-  /* background-position: center;
-  background-repeat: no-repeat; */
-  /* background-size: cover; */
 }
+
+
+/* BUTTON ON LANDING PAGE */
 
 .last {
   margin-top: -1rem;
@@ -80,6 +71,7 @@ margin-top: 1.5rem;
 .lw{
   position:relative;
 }
+
 
 .button-landing, .button-landing-2{
   transition: .5s ease;
@@ -94,6 +86,34 @@ margin-top: 1.5rem;
   font-size: 1.25em;
   border: 1.25px solid black;
 }
+
+
+.bl-2 {
+  text-align: center;
+  margin-top: -50%;
+  margin-bottom: 50%;
+}
+
+.landing-wrapper {
+  padding-bottom: 1rem;
+
+}
+
+
+.landing-wrapper2 {
+  display: flex;
+}
+
+/* IMAGES 3X ON LANDING */
+
+.choice-img {
+  border: 1.25px solid black;
+
+}
+
+
+/* END LANDING */
+
 
 .button-addtocart2 {
   background-color: #f0eee3;
@@ -111,6 +131,9 @@ margin-top: 1.5rem;
   border: 1px solid black;
 }
 
+/* BUTTON BACK TO SHOPPING*/
+
+
 .button-back{
   background-color: #ffffff;
   color: black;
@@ -120,7 +143,6 @@ margin-top: 1.5rem;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 1em;
-  /* padding: 0.5em 1em 0.5em 1em; */
   padding: 1em 2em 1em 2em;
   border: 1px solid black;
   display:flex;
@@ -139,7 +161,6 @@ margin-top: 1.5rem;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 1em;
-  /* padding: 0.5em 1em 0.5em 1em; */
   padding: 1em 2em 1em 2em;
   border: 1px solid black;
   display:flex;
@@ -157,7 +178,6 @@ margin-top: 1.5rem;
 .button-landing:hover, .button-landing:focus,
 .button-landing-2:hover, .button-landing-2:focus{
   background-color: #f0eee3;
-  /* color: #b4876e; */
   color: black;
   outline:none;
 }
@@ -168,16 +188,9 @@ color: white;
 }
 
 
-.bl-2 {
-  text-align: center;
-  margin-top: -50%;
-  margin-bottom: 50%;
-}
 
-.choice-img {
-  border: 1.25px solid black;
+/* PAGE INTRO */
 
-}
 
 .content-title{
   display: block;
@@ -185,22 +198,9 @@ color: white;
   margin-bottom: 4rem;
 }
 
-/* landing page - home */
 
-/* .landing-content {
-  display:
-} */
+/* PRODUCT DETAIL CSS */
 
-.landing-wrapper {
-  padding-bottom: 1rem;
-  /* margin: 0.5rem; */
-
-}
-
-
-.landing-wrapper2 {
-  display: flex;
-}
 
 .pd-style2 {
   border: 1px solid black;
@@ -209,11 +209,18 @@ color: white;
   background-color: rgb(240, 238, 227, 0.1);
 }
 
+
+/* END PRODCUT DETAIL CSS */
+
+/* ADD TO CART CSS*/
+
 .b-atc2 {
   margin-top: 3rem;
 }
 
+/* END ADD TO CART CSS */
 
+/* FOOTER CSS */
 
 
 .fcolumn {
@@ -248,7 +255,6 @@ border: solid 1px black;
 
 .footer-submit {
   margin-left: -5px;
-  /* display: inline-block; */
   padding: 1.08em 2em 1.08em 2em;
   background-color: #f0eee3;
   color: black;
@@ -260,8 +266,7 @@ border: solid 1px black;
   font-size: 0.9em;
   border: solid 1px black;
   text-transform: uppercase;
-  /* border-style: none; */
-  /* border-radius: 0.2em; */
+
 }
 
 #footer-bar {
@@ -272,6 +277,12 @@ border: solid 1px black;
 hr.line-black {
   border: 0.5px solid black;
 }
+
+
+/* END FOOTER CSS */
+
+/* ABOUT PAGE CSS */
+
 
 .about-info, .por2 {
   margin-top: 3em;
@@ -286,6 +297,9 @@ hr.line-black {
   margin-top:0;
 }
 
+/* END ABOUT PAGE CSS */
+
+
 .product-list-grid {
   margin: 0 auto;
 }
@@ -293,13 +307,13 @@ hr.line-black {
 
 
 
+/* RESPONSIVENESS CSS */
 
 
 @media (min-width: 10em) {
 
   .landing-wrapper2 {
     flex-direction: column;
-    /* display: block; */
   }
 
   .choice-img {
@@ -321,7 +335,6 @@ hr.line-black {
 
   .pd-item {
   max-width:100%;
-    /* margin-right:0; */
       margin-right: 0.5rem;
   }
 
@@ -331,9 +344,6 @@ hr.line-black {
 }
 
 .footer-section {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   margin: 0 auto;
   padding:3rem 1rem 3rem 1rem;
 
@@ -391,7 +401,6 @@ max-width: 90%;
   .landing-wrapper {
     display: flex;
     flex-direction: row;
-    /* flex: 1; */
   }
 
   .grid-col-1 {
@@ -465,11 +474,9 @@ max-width: 90%;
     }
 
     .footer-section {
-      /* position: relative; */
       display: flex;
       flex-grow:0;
       padding:3rem 1rem 3rem 1rem;
-      /* justify-content: space-between; */
     }
 
     .fcolumn2 {

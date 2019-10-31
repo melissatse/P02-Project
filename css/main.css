@@ -11,188 +11,18 @@
   BEIGE: #f0eee2;
 */
 
-/*
-body {
-  padding: 1rem;
-  margin:1rem;
-  box-sizing: border-box;
-} */
-
-
-
-.cart-container{
-  display: flex;
-  flex-wrap: wrap;
-  padding-right: 4em;
-
-}
-
-
-.heading {
-  display: block;
-  text-align: center;
-  margin-bottom: 0.5rem;
-
-}
-/* STYLING */
-.payment-form, .contact-form{
-
-/* display: inline-block;
-  flex-wrap: wrap; */
-  max-width: 500px;
-  padding: 4em;
-  border: 0.05em solid black;
-  margin-bottom: 2em;
-  flex:3;
-}
-
-.payment-form{
-  min-width: 500px;
-}
-
-.checkout-items{
-
-  max-width: 500px;
-/*  border: 0.05em solid black; */
-  margin-bottom: 2em;
-  margin-left: 6em;
-  padding: 2em;
-  flex:1;
-}
-
-
-
-
-
-.label-style {
-  font-family:"Lato", sans-serif;
-  font-weight: 300;
-  font-size: 0.8em;
-  color:black;
-}
-
-
-
-
-.custom-select {
-  position: relative;
-  font-family: Lato;
-  padding:1em 1em 1em 0;
-  background-color: transparent;
-
-}
-
-input:focus, textarea:focus, select:focus{
-       outline: none;
-
-   }
-
-
-
-
-
-
-
-/* TESTING IAMGE HOVER */
-
-
-
-.element {
-  padding-bottom: 2rem;
-  border-top-width: 0.15rem;
-  border-top-style: solid;
-  border-top-color: black;
-}
-
-h3 {
-  margin-top: 1rem;
-}
-
-h4 {
-  margin-bottom: 0.25rem;
-}
-
-p {
-  margin-top: 0;
-}
-
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
-
-* {
-  background: white;
-}
-
-code {
-  background-color: #ddd9c3;
-  padding: 0.5rem;
-  display: block;
-}
-
-
-/* BRANDING SECTION + GENERAL OVERALL STYLING  */
-
-.jocale {
-  font-family: 'DM Serif Display', serif;
-  /* font-size: 3.5em; */
-  font-size: 4em;
-  color: black;
-  margin-top: -1em;
-  margin-bottom: 0.5em;
-  text-decoration: none;
-}
-
-/* .branding-info {
-  max-width: 500px;
-} */
-
-
-.user-image{
-  max-width: 25%;
-  height:auto;
-  decoration:none;
-  display: inline-block;
-}
-
-.product-image{
-  max-width: 40%;
-  height: auto;
-  decoration:none;
-  display: inline-block;
-
-}
-
-/* CAPTIONS UNDER IMAGES */
-figcaption {
-  font-family:"Lato", sans-serif;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 0.8em;
-  margin-bottom:2rem;
-
-}
-
-p , li {
-  font-family: 'Lato', sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-}
-
-
-h2 , h3 , h4 , h5 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #28261a;
-}
-
-a {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.9em;
-}
-
 /* COLOR PALETTE */
+
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  letter-spacing: 0.8px;
+
+}
+
+
 .color1 {
   background-color:#000000;
   font-size: 1.2em;
@@ -238,10 +68,123 @@ a {
   max-width: 500px;
 }
 
-/* MOODBOARD */
-.artdirection {
-  max-width: 100%;
+/* END OF COLOR PALETTE */
+
+/*HEADING JOCALE CSS */
+
+.heading {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.5rem;
+
 }
+
+.jocale {
+  font-family: 'DM Serif Display', serif;
+  font-size: 4em;
+  color: black;
+  margin-top: -1em;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+}
+
+/*STYLEGUIDE + BASIC CSS */
+
+/* SECTION TITLES */
+
+section {
+  max-width:800px;
+}
+
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+* {
+  background: white;
+  box-sizing: border-box;
+}
+
+code {
+  background-color: #ddd9c3;
+  padding: 0.5rem;
+  display: block;
+}
+
+p , li {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+
+
+h2 , h3 , h4 , h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #28261a;
+}
+
+
+h6 {
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  }
+
+a {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+}
+
+/* HOVER STATE */
+
+li a:hover {
+  background-color: #f0eee2;
+}
+
+/* MAKE THEM ALIGN T LEFT*/
+
+li {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.8;
+
+}
+
+li a {
+  float: left;
+  font-family:"Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  letter-spacing: 0.8;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 
 .italic{
   font-style: italic;
@@ -250,9 +193,151 @@ a {
 .bold{
   font-weight: 400;
 }
-.subtotal{
-  padding:-12em;
+
+/* PERSONA IMAGES */
+
+
+.user-image{
+  max-width: 25%;
+  height:auto;
+  decoration:none;
+  display: inline-block;
 }
+
+
+/* CAPTIONS UNDER IMAGES */
+figcaption {
+  font-family:"Lato", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-bottom:2rem;
+
+}
+
+/* END OF STYLEGUIDE/BASIC CSS */
+
+
+/* CHECKOUT CSS */
+
+
+.cart-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 4em;
+
+}
+.Price-cart{
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-top:0.2em;
+
+}
+
+.Prod-cart{
+  font-size: 1em;
+  font-weight: 500;
+  margin-top:2em;
+  text-decoration: none;
+  color: #b4876e;
+
+
+}
+.payment-form, .contact-form{
+  max-width: 500px;
+  padding: 4em;
+  border: 0.05em solid black;
+  margin-bottom: 2em;
+  flex:3;
+}
+
+.payment-form{
+  min-width: 500px;
+}
+
+.checkout-items{
+  max-width: 500px;
+  margin-bottom: 2em;
+  margin-left: 6em;
+  padding: 2em;
+  flex:1;
+}
+
+
+.label-style {
+  font-family:"Lato", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  color:black;
+}
+
+
+input:focus, textarea:focus, select:focus{
+       outline: none;
+
+   }
+
+
+   .bill-info-1, .contact-info-1 {
+
+     display:flex;
+     flex-direction: column;
+     max-width: 500px;
+
+   }
+
+   .bill-style{
+     font-family:"Lato", sans-serif;
+     font-weight: 300;
+     font-size: 0.8em;
+   }
+
+   .bill-info-1, .input-style , .bill-info-3, .contact-info-1 {
+   color: black;
+   border-color: #b4876e;
+   margin-top: 0.8em;
+   margin-bottom: 0.8em;
+   }
+
+   .message-style{
+     color: black;
+     border-color: #b4876e;
+     margin-top: 0.8em;
+     margin-bottom: 0.8em;
+     height:10em;
+   }
+
+
+   .bill-info-2 , .bill-info-4 {
+     display:inline-block;
+     max-width: 500px;
+     padding-bottom:20px;
+   }
+
+   input[type=submit]:focus , input[type=reset]:focus , input[type=text]:focus  {
+   outline: none;
+   color:black;
+   decoration:none;
+
+   }
+
+
+   .bill-info-3 {
+     display:flex;
+     flex-direction: column;
+     max-width: 200px;
+   }
+
+
+   .subtotal{
+     padding:-12em;
+   }
+
+/*END OF CHECKOUT CSS */
+
+
+/* LINE ELEMENTS CSS */
+
 
 hr.line1 {
   border-top: 0.1em solid black;
@@ -267,13 +352,6 @@ hr.line2 {
 #text-Input{
   text-decoration: none;
  }
-
-/* SECTION TITLES */
-
-section {
-  max-width:800px;
-}
-
 
 
 /* IN TEXT LINK STYLING */
@@ -295,18 +373,13 @@ section {
 
 /* NAVIGATION STYLING */
 
-/* nav {
-  border: solid 1px black;
-} */
+
 .button-nav-main {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 0.7rem;
   padding: 0.5rem;
-  /* background-color: #b4876e; */
   background-color: Transparent;
-  /* background: white; */
-  /* color:#f0eee3; */
   color: black;
   text-decoration: none;
   transition-property: background-color;
@@ -323,211 +396,6 @@ section {
   background-color: #f0eee3;
   color: black;
 }
-
-
-/*ORDER SUMMARY COLLAPSES */
-@media (max-width: 1083px) {
-  .checkout-items {
-    margin-left: 0;
-    padding-left: 1em;
-
-  }
-
-  .payment-form{
-    margin-right: 5em;
-  }
-}
-
-
-
-
-@media (min-width: 50em) {
-
-  /* product list styling */
-
-  .button-nav-main {
-      margin-right: -1px;
-  }
-
-  /* .product-list-grid {
-      display: flex;
-  } */
-
-  .box {
-    padding: 1.5rem;
-  }
-  .p-item {
-    max-width: 70%;
-  }
-
-  .product-list {
-    display: flex;
-    margin-bottom: 100px;
-  }
-
-
-  .preloved-product {
-    margin-top: 0.5em;
-    font-size: 1.5em;
-    max-width: 300px;
-    color: #60452c;
-  }
-
-  .product-subtitle {
-    margin-top: 20px;
-    margin-bottom: 15px;
-    font-size: 14pt;
-    color: #333414;
-  }
-
-
-  .Price {
-    font-weight: 500;
-  }
-/* CLOSING TAG FOR 50 EM */
-}
-
-
-
-/* SMALLER SCREENS STYLING */
-@media (min-width: 20em) {
-
-  body {
-    padding: 0.5rem;
-    box-sizing: border-box;
-    margin:2rem;
-  }
-
-.button-nav-main {
-  display: flex;
-  margin-bottom: -1px;
-
-}
-.box {
-  padding-bottom: 1.5rem;
-  /* border: solid black 1px; */
-}
-.p-item {
-  /* max-width: 300px; */
-  max-width: 80%;
-}
-
-.product-list {
-  display: block;
-  margin-bottom: 6em;
-}
-
-.product-description {
-  margin-top: 0.5em;
-  margin-left: 0;
-}
-
-
-.preloved-product {
-  margin-top: 5px;
-  font-size: 1.5em;
-  max-width: 300px;
-  color: #60452c;
-}
-
-.product-subtitle {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  font-size: 14pt;
-  color: #333414;
-}
-
-.button-addtocart {
-  margin-top: 1em;
-}
-
-/*  STYLING FOR SMALL CART SCREENS */
-
-
-
-}
-
-
-/*  STYLING FOR BIGGER SCREENS */
-
-
-@media (min-width: 50em) {
-body {
-  padding: 0.5rem;
-  box-sizing: border-box;
-  margin:3rem;
-}
-/* NAVIGATION */
-    nav {
-      display: flex;
-    }
-    .button-nav-main {
-    display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-    }
-/* PRODUCT LISTING STYLING */
-/* .p-item {
-  max-width: 100%;
-} */
-
-.product-list {
-  display: flex;
-  margin-bottom: 100px;
-}
-
-
-.product-description {
-  margin-top: -10px;
-  margin-left: 20px;
-}
-
-
-
-.preloved-product {
-  margin-top: 0.5em;
-  font-size: 1.5em;
-  max-width: 300px;
-  color: #60452c;
-}
-
-.product-subtitle {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  font-size: 14pt;
-  color: #333414;
-}
-
-
-.object-description {
-  margin-top: -0.5em;
-  margin-bottom:0.5em;
-  max-width: 300px;
-  line-height: 1.5;
-}
-
-.button-addtocart {
-  margin-top: 1em;
-}
-
-/* checkout styling */
-.row2 {
-  display:flex;
-}
-
-.row2 .column1 {
-  margin-right: 50px;
-}
-
-
-.checkout-items{
-  display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-}
-
-}
-
 
 
 .row1 {
@@ -574,73 +442,8 @@ margin-top: 0;
 }
 
 
-/* PAYMENT FORM STYLING.*/
 
-.fill {
-  display:block;
-  padding-top: 5%;
-}
-
-.product-description {
-  display:flex;
-  flex-direction: column;
-}
-
-
-
-.bill-info-1, .contact-info-1 {
-
-  display:flex;
-  flex-direction: column;
-  max-width: 500px;
-
-}
-
-.bill-style{
-  font-family:"Lato", sans-serif;
-  font-weight: 300;
-  font-size: 0.8em;
-}
-
-.bill-info-1, .input-style , .bill-info-3, .contact-info-1 {
-color: black;
-border-color: #b4876e;
-margin-top: 0.8em;
-margin-bottom: 0.8em;
-}
-
-.message-style{
-  color: black;
-  border-color: #b4876e;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-  height:10em;
-}
-
-
-
-.bill-info-2 , .bill-info-4 {
-  display:inline-block;
-  max-width: 500px;
-  padding-bottom:20px;
-}
-
-input[type=submit]:focus , input[type=reset]:focus , input[type=text]:focus  {
-outline: none;
-color:black;
-decoration:none;
-
-}
-
-
-
-.bill-info-3 {
-  display:flex;
-  flex-direction: column;
-  max-width: 200px;
-}
-
-/* Styling for basic buttons */
+/* BUTTON STYLING */
 .button-nav , .submit-style, .reset-style , .button-addtocart {
   display: inline-block;
   padding: 0.5em 1em 0.5em 1em;
@@ -653,12 +456,9 @@ decoration:none;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 0.9em;
-  /* border: solid 1px black; */
   border-style: none;
-  /* border-radius: 0.2em; */
 
 }
-
 
 
 .button-out{
@@ -679,9 +479,7 @@ decoration:none;
 }
 
 .button-nav:hover, .button-nav:focus , .button-addtocart:hover, .button-addtocart:focus,  .submit-style:hover, .submit-style:focus, .reset-style:hover, .reset-style:focus {
-  /* background-color: #f0eee3; */
   background-color: #b4876e;
-  /* color:#b4876e; */
   color:white;
 
 }
@@ -692,96 +490,14 @@ decoration:none;
 }
 
 
+/* PRODUCT INFO*/
+
 .Price {
   font-weight: 500;
   margin-top:1em;
 }
 
-.Price-cart{
-  font-size: 0.8em;
-  font-weight: 500;
-  margin-top:0.2em;
 
-}
-
-.Prod-cart{
-  font-size: 1em;
-  font-weight: 500;
-  margin-top:2em;
-  text-decoration: none;
-  color: #b4876e;
-
-
-}
-
-.Price-total{
-  font-weight: 500;
-  margin-top:1em;
-  margin-bottom: -0.6em;
-
-}
-
-
-
-
-
-
-
-
-/*
-  CHECKOUT CSS?  ---
-  ----------------
-*/
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 0.8em;
-  letter-spacing: 0.8px;
-  /* margin-top: 1rem; */
-
-}
-
-
-
-/* MAKE THEM ALIGN T LEFT*/
-
-li {
-  font-family: Lato;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 0.8rem;
-  letter-spacing: 0.8;
-
-}
-
-li a {
-  float: left;
-  font-family:"Lato", sans-serif;
-  font-weight: 300;
-  font-size: 0.8em;
-  letter-spacing: 0.8;
-  display: block;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-/* HOVER STATE */
-li a:hover {
-  background-color: #f0eee2;
-}
-
-
-
-
-h6 {
-  letter-spacing: 0.1rem;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  }
-
-* {
-  box-sizing: border-box;
-}
 
 /* CONTAINING ALL TEXT INPUTS IN ONE BOX */
 .container {
@@ -791,16 +507,15 @@ h6 {
   border-radius: 3px;
 }
 
+/* SEARCH STYLING */
+
 input[type=text] {
-  /* width: 100%; */
   margin-bottom: 20px;
   padding: 1.1em;
   border: 1px solid #ccc;
   decoration: none;
 }
 
-
-  /* SEARCH STYLING */
 input[type=search]:focus  {
 outline: none;
 color:#b4876e;
@@ -815,18 +530,196 @@ input[type=search] {
 
 
 
-
-
-
-
-.icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: 24px;
-}
-
 /* PRICE STYLING */
 span.price {
   float: right;
   color: grey;
+}
+
+
+/*ORDER/CART SUMMARY COLLAPSES */
+@media (max-width: 1083px) {
+  .checkout-items {
+    margin-left: 0;
+    padding-left: 1em;
+
+  }
+
+  .payment-form{
+    margin-right: 5em;
+  }
+}
+
+/* PRODUCT LIST */
+
+@media (min-width: 50em) {
+
+
+  .button-nav-main {
+      margin-right: -1px;
+  }
+
+  .box {
+    padding: 1.5rem;
+  }
+  .p-item {
+    max-width: 70%;
+  }
+
+  .product-list {
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+
+  .preloved-product {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    max-width: 300px;
+    color: #60452c;
+  }
+
+  .product-subtitle {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 14pt;
+    color: #333414;
+  }
+
+
+  .Price {
+    font-weight: 500;
+  }
+}
+
+
+
+/* SMALLER SCREENS STYLING */
+@media (min-width: 20em) {
+
+  body {
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin:2rem;
+  }
+
+.button-nav-main {
+  display: flex;
+  margin-bottom: -1px;
+
+}
+.box {
+  padding-bottom: 1.5rem;
+}
+.p-item {
+  max-width: 80%;
+}
+
+.product-list {
+  display: block;
+  margin-bottom: 6em;
+}
+
+.product-description {
+  margin-top: 0.5em;
+  margin-left: 0;
+}
+
+
+.preloved-product {
+  margin-top: 5px;
+  font-size: 1.5em;
+  max-width: 300px;
+  color: #60452c;
+}
+
+.product-subtitle {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 14pt;
+  color: #333414;
+}
+
+.button-addtocart {
+  margin-top: 1em;
+}
+
+
+}
+
+
+/*  STYLING FOR BIGGER SCREENS */
+
+
+@media (min-width: 50em) {
+body {
+  padding: 0.5rem;
+  box-sizing: border-box;
+  margin:3rem;
+}
+
+/* NAVIGATION */
+    nav {
+      display: flex;
+    }
+    .button-nav-main {
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+    }
+
+.product-list {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+
+.product-description {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+
+
+.preloved-product {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  max-width: 300px;
+  color: #60452c;
+}
+
+.product-subtitle {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 14pt;
+  color: #333414;
+}
+
+
+.object-description {
+  margin-top: -0.5em;
+  margin-bottom:0.5em;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+.button-addtocart {
+  margin-top: 1em;
+}
+
+.row2 {
+  display:flex;
+}
+
+.row2 .column1 {
+  margin-right: 50px;
+}
+
+
+.checkout-items{
+  display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+
 }

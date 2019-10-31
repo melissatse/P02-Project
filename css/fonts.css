@@ -1,37 +1,5 @@
-/*
-@font-face {
-  src: url(fonts/recoleta-black-webfont.woff);
-  font-family: recoleta-black;
-} */
+/*OTHER FONTS EMBEDDED IN THE HTML*/
 
-/* 
-
-@font-face {
-font-family: "PlayfairDisplay";
-font-weight: normal;
-font-style: normal;
-src: url("../css/fonts/PlayfairDisplay-Regular.ttf");
-}
-
-@font-face {
-font-family: "PlayfairDisplay";
-font-weight: bold;
-font-style: bold;
-src: url("../css/fonts/PlayfairDisplay-Bold.ttf");
-}
-
-@font-face {
-font-family: "PlayfairDisplay";
-font-weight: italic;
-font-style: normal;
-src: url("../css/fonts/PlayfairDisplay-Italic.ttf");
-} */
-
-/*
-.recoleta{
-  font-family: recoleta-black;
-  font-size: 2.2em;
-} */
 
 .lato-font{
   font-family: 'Lato', sans-serif;
