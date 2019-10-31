@@ -23,6 +23,7 @@ body {
 .cart-container{
   display: flex;
   flex-wrap: wrap;
+  padding-right: 4em;
 
 }
 
@@ -45,15 +46,23 @@ body {
   flex:3;
 }
 
+.payment-form{
+  min-width: 500px;
+}
+
 .checkout-items{
 
   max-width: 500px;
-  padding: 4em;
-  margin-left: 3em;
 /*  border: 0.05em solid black; */
   margin-bottom: 2em;
+  margin-left: 6em;
+  padding: 2em;
   flex:1;
 }
+
+
+
+
 
 .label-style {
   font-family:"Lato", sans-serif;
@@ -312,9 +321,23 @@ section {
 
 .button-nav-main:hover, .button-nav-main:focus {
   background-color: #f0eee3;
-  /* color: #b4876e; */
   color: black;
 }
+
+
+/*ORDER SUMMARY COLLAPSES */
+@media (max-width: 1083px) {
+  .checkout-items {
+    margin-left: 0;
+    padding-left: 1em;
+
+  }
+
+  .payment-form{
+    margin-right: 5em;
+  }
+}
+
 
 
 
@@ -364,16 +387,6 @@ section {
 /* CLOSING TAG FOR 50 EM */
 }
 
-.checkout-items{
-
-  max-width: 500px;
-  padding: 4em;
-  margin-left: 3em;
-/*  border: 0.05em solid black; */
-  margin-bottom: 2em;
-  flex:1;
-}
-
 
 
 /* SMALLER SCREENS STYLING */
@@ -388,6 +401,7 @@ section {
 .button-nav-main {
   display: flex;
   margin-bottom: -1px;
+
 }
 .box {
   padding-bottom: 1.5rem;
@@ -427,6 +441,7 @@ section {
   margin-top: 1em;
 }
 
+/*  STYLING FOR SMALL CART SCREENS */
 
 
 
@@ -505,19 +520,14 @@ body {
 }
 
 
+.checkout-items{
+  display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
 
 }
 
-
-/* CHECKOUT CART STYLING */
-
-/* .checkout-items {
-  display:flex;
-  flex-direction: column;
-  max-width: 500px;
-  padding: 50px;
-  border: 2px solid black;
-} */
 
 
 .row1 {
@@ -717,30 +727,6 @@ decoration:none;
 
 
 
-/* .landing img{
-  height:auto;
-} */
-
-/* .landing-btn {
-  top: 80%;
-  right:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  padding: 0.5em 1em 0.5em 1em;
-  color: #f0eee2;
-  background-color: #c39c87;
-  text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 0.9em;
-  border-style: none;
-  border-radius: 0.2em;
-
-} */
-
 
 /*
   CHECKOUT CSS?  ---
@@ -757,11 +743,6 @@ body {
 }
 
 
-/* ul {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #f0eee2;
-} */
 
 /* MAKE THEM ALIGN T LEFT*/
 
@@ -788,17 +769,6 @@ li a {
 li a:hover {
   background-color: #f0eee2;
 }
-
-/* LINK STATES TO CHANGE ACCORDINGLY  */
-/* a:link, a:visited {
-  color: red;
-} */
-
-/* commented out on 10/23 11:24pm */
-/* a:hover {
-  color: #e2d5b7;
-} */
-
 
 
 
@@ -844,38 +814,6 @@ input[type=search] {
 
 
 
-/* input[type=radio] {
-  decoration: none;
-} */
-
-/* input[type='radio']:after {
-       width: 15px;
-       height: 15px;
-       border-radius: 15px;
-       top: -2px;
-       left: -1px;
-       position: relative;
-       background-color: #d1d3d1;
-       content: '';
-       display: inline-block;
-       visibility: visible;
-       border: 2px solid white;
-   }
-
-   input[type='radio']:checked:after {
-       width: 15px;
-       height: 15px;
-       border-radius: 15px;
-       top: -2px;
-       left: -1px;
-       position: relative;
-       background-color: #966448;
-       content: '';
-       display: inline-block;
-       visibility: visible;
-       border: 2px solid white;
-   } */
-
 
 
 
@@ -892,13 +830,3 @@ span.price {
   float: right;
   color: grey;
 }
-
-/* RESPONSIVE*/
-/* @media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
-  }
-} */
